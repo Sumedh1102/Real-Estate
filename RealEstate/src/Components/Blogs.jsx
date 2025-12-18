@@ -38,7 +38,7 @@ const BlogsSection = () => {
   ];
 
   return (
-    <section className="w-full bg-[#F5F1E9] py-24 px-6">
+    <section className="w-full bg-[#F5F1E9] pb-24 px-6">
       <div className="max-w-[1350px] mx-auto">
         {/* Section Header */}
           <div className="border border-black/10 mb-3"></div>
@@ -107,16 +107,6 @@ const BlogsSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Bottom CTA Button */}
-        <div className="flex justify-center mt-16">
-          <button 
-            className="group bg-black text-white px-6 py-4 rounded-xl font-medium text-sm tracking-wide flex items-center gap-3 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-          >
-            READ ALL BLOGS
-            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
         </div>
       </div>
     </section>

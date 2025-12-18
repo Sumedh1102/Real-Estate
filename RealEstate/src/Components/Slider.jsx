@@ -281,28 +281,6 @@ const TestimonialsCarousel = () => {
             ))}
           </div>
         </div>
-
-        {/* Pagination Dots */}
-        <div className="flex justify-center gap-2 mt-10" role="tablist">
-          {testimonials.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => {
-                stopAutoPlay();
-                setCurrentIndex(index);
-                setTimeout(startAutoPlay, 2000);
-              }}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex 
-                  ? 'bg-black w-8' 
-                  : 'bg-gray-300 hover:bg-gray-400'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-              role="tab"
-              aria-selected={index === currentIndex}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );

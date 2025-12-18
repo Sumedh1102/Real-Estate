@@ -1,6 +1,6 @@
 import React from 'react'
 import Parallex from '../Components/Parallex'
-import Stacking from '../Components/Stacking'
+import PropertyComponent from '../SubComponents/PropertyComponent'
 import Grid from '../Components/Grid'
 import Uniqueness from '../Components/Uniqueness'
 import Ouragency from '../Components/Ouragency'
@@ -13,16 +13,18 @@ import Services from '../Components/Services'
 const Home = () => {
   return (
     <>
-      <Parallex/>
-      <Stacking/>
-      <Grid/>
-      <Services/>
-      <Uniqueness/>
-      <Ouragency/>
-      <Timeline/>
-      <Slider/>
-      <Blogs/>
-      <Faq/>
+      <div className='overflow-hidden'>
+        <Parallex />
+        <PropertyComponent />
+        <Grid />
+        <Services />
+        <Uniqueness />
+        <Ouragency />
+        <Timeline />
+        <Slider />
+        <Blogs />
+        <Faq />
+      </div>
     </>
   )
 }
