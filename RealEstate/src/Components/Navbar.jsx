@@ -6,12 +6,9 @@ const Navbar = () => {
   
   const navItems = [
     "About",
-    "Explore",
-    "Sell",
     "Submit Property",
     "Reviews",
     "Blogs",
-    "Contact"
   ];
 
   return (
@@ -62,7 +59,7 @@ const Navbar = () => {
 
           {/* CTA Button - Desktop */}
           <button className="hidden lg:flex items-center gap-2 bg-black text-white px-5 py-3.5 rounded-xl font-medium text-sm hover:scale-105 transition-all duration-250 uppercase tracking-wide">
-            Buy Template
+            Contact Us
             <ArrowRight className="w-4 h-4" />
           </button>
 
