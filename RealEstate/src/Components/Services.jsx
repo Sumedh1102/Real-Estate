@@ -48,17 +48,28 @@ export default function ServicesSection() {
   }
 
   return (
-    <section className="w-full bg-[#F5F1E9] py-12 sm:py-16 md:py-20 lg:py-28">
-      <div className="mx-auto max-w-[1100px] px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32">
-        {/* Header */}
-        <div className="mb-8 flex flex-col items-center text-center sm:mb-10 md:mb-12">
-          <div className="mb-4 flex items-center gap-2 md:mb-6">
-            <span className="h-3 w-3 rounded-[4px] bg-black" />
-            <span className="text-sm font-medium text-black sm:text-base">SERVICES</span>
+    <section className="w-full bg-[#F5F1E9]">
+      <div className="mx-auto max-w-9xl px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32">
+               {/* Header */}
+        <div className="border-t border-black/10 mb-6 sm:mb-8"></div>
+        
+        <div className="mb-8 sm:mb-10 md:mb-12">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
+            {/* Label - Mobile: stacked, Desktop: left */}
+            <div className="flex items-center gap-2 sm:pt-1">
+              <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-sm bg-[#1a1a1a]" />
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium">
+                Neighborhood
+              </span>
+            </div>
+            
+            {/* Heading - Mobile: below label, Desktop: right side */}
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-40">
+              Where you live matters
+              <br />
+              —pick the perfect spot
+            </h2>
           </div>
-          <h2 className="max-w-[700px] px-4 text-3xl font-medium leading-tight tracking-tight text-black sm:text-4xl md:text-5xl">
-            <span className="text-balance">Service, support, and strategy — made simple from start to finish.</span>
-          </h2>
         </div>
 
         {/* Services Card */}

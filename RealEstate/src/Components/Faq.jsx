@@ -73,19 +73,27 @@ const FAQSection = () => {
   return (
     <div className="min-h-screen pb-10" style={{ backgroundColor: '#F5F1E9' }}>
       <div className="max-w-[1400px] mx-auto ">
-          {/* Section Header */}
-          <div className="border border-black/10 mb-3"></div>
-          <div className="mb-10">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="w-3 h-3 rounded-sm bg-[#1a1a1a] mb-16" />
-              <span className="text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium pb-16">FAQs</span>
-            <h2 className="text-3xl md:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight translate ml-32">
-              Everything you wanted to
-              <br />
-              ask (but didn’t know who to)
-            </h2>
+                  {/* Header */}
+        <div className="border-t border-black/10 mb-6 sm:mb-8"></div>
+        
+        <div className="mb-8 sm:mb-10 md:mb-12">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
+            {/* Label - Mobile: stacked, Desktop: left */}
+            <div className="flex items-center gap-2 sm:pt-1">
+              <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-sm bg-[#1a1a1a]" />
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium">
+                Neighborhood
+              </span>
             </div>
+            
+            {/* Heading - Mobile: below label, Desktop: right side */}
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-40">
+              Where you live matters
+              <br />
+              —pick the perfect spot
+            </h2>
           </div>
+        </div>
 
         {/* Two Column Layout */}
         <div className="grid gap-12 lg:gap-12 items-start lg:grid-cols-[37%_65%]">

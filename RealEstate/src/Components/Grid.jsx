@@ -45,9 +45,9 @@ function NeighborhoodCard({ name, image, hasViewButton }) {
 
       {/* Card Footer */}
       <div className="flex items-center justify-between mt-3 px-1">
-        <span className="text-black text-xl font-normal tracking-tight">{name}</span>
+        <span className="text-black text-base sm:text-lg md:text-xl font-normal tracking-tight">{name}</span>
 
-        <button className="w-10 h-8 bg-white rounded-lg flex items-center justify-center transition-transform duration-300">
+        <button className="w-8 h-8 sm:w-10 sm:h-8 bg-white rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-110 flex-shrink-0">
           <ChevronRight className="w-4 h-4 text-black" />
         </button>
       </div>
@@ -57,25 +57,32 @@ function NeighborhoodCard({ name, image, hasViewButton }) {
 
 export default function Home() {
   return (
-    <main className="w-full bg-[#F5F1E9] min-h-screen py-16 md:py-20">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+    <main className="w-full bg-[#F5F1E9] min-h-screen py-8 sm:py-12 md:py-16 lg:py-20">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-10">
         {/* Header */}
-       {/* Section Header */}
-          <div className="border border-black/10 mb-3"></div>
-          <div className="mb-10">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="w-3 h-3 rounded-sm bg-[#1a1a1a] mb-16" />
-              <span className="text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium pb-16">Neighborhood</span>
-            <h2 className="text-3xl md:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight translate ml-32">
+        <div className="border-t border-black/10 mb-6 sm:mb-8"></div>
+        
+        <div className="mb-8 sm:mb-10 md:mb-12">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
+            {/* Label - Mobile: stacked, Desktop: left */}
+            <div className="flex items-center gap-2 sm:pt-1">
+              <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-sm bg-[#1a1a1a]" />
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium">
+                Neighborhood
+              </span>
+            </div>
+            
+            {/* Heading - Mobile: below label, Desktop: right side */}
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-40">
               Where you live matters
               <br />
-              — pick the perfect spot
+              —pick the perfect spot
             </h2>
-            </div>
           </div>
+        </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-5 md:gap-6 lg:gap-8">
           {neighborhoods.map((neighborhood) => (
             <NeighborhoodCard
               key={neighborhood.name}
@@ -86,14 +93,13 @@ export default function Home() {
           ))}
         </div>
 
-        
-          {/* CTA Button */}
-          <div className="flex justify-center mt-12">
-            <button className="flex items-center gap-2 bg-[#1a1a1a] text-white px-8 py-3.5 rounded-xl text-sm font-medium uppercase tracking-wide hover:scale-105 hover:shadow-xl transition-all duration-300">
-              VIEW ALL NEIGHBORHOODS
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
+        {/* CTA Button */}
+        <div className="flex justify-center mt-10 sm:mt-12 md:mt-14">
+          <button className="flex items-center gap-2 bg-[#1a1a1a] text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium uppercase tracking-wide hover:scale-105 hover:shadow-xl transition-all duration-300">
+            VIEW ALL NEIGHBORHOODS
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
       </div>
     </main>
   );
