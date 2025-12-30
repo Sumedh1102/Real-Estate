@@ -78,7 +78,7 @@ const ProcessTimeline = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#F5F1E9] pt-24 px-6">
+    <div className="min-h-screen bg-[#F5F1E9] pt-12 sm:pt-16 md:pt-20 lg:pt-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1350px] mx-auto">
                 {/* Header */}
         <div className="border-t border-black/10 mb-6 sm:mb-8"></div>
@@ -94,16 +94,16 @@ const ProcessTimeline = () => {
             </div>
             
             {/* Heading - Mobile: below label, Desktop: right side */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-40">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight md:translate-x-20 lg:translate-x-40">
               Where you live matters
               <br />
               —pick the perfect spot
             </h2>
           </div>
         </div>
-        
+
         {/* Timeline */}
-        <div ref={timelineRef} className="relative mt-16">
+        <div ref={timelineRef} className="relative mt-8 sm:mt-12 md:mt-16">
           {/* Background Line */}
           <div className="absolute left-1/2 top-8 bottom-0 w-px bg-[#F5F1E9] -translate-x-1/2 hidden md:block" />
 
@@ -114,7 +114,7 @@ const ProcessTimeline = () => {
           />
 
           {/* Steps */}
-          <div className="space-y-36">
+          <div className="space-y-16 sm:space-y-24 md:space-y-32 lg:space-y-36">
             {steps.map((step, index) => (
               <div
                 key={step.id}
@@ -144,7 +144,7 @@ const ProcessTimeline = () => {
 
                 {/* Content Grid */}
                 <div
-                  className={`grid md:grid-cols-2 gap-8 md:gap-32 items-center ${
+                  className={`grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16 lg:gap-24 xl:gap-32 items-center ${
                     step.align === "right" ? "" : "md:grid-flow-dense"
                   }`}
                 >
@@ -156,14 +156,14 @@ const ProcessTimeline = () => {
                         : "md:col-start-2"
                     } transition-all duration-700 ${
                       visibleSteps[index]
-                        ? "opacity-100 translate-y-6"
-                        : "opacity-0 translate-y-20"
+                        ? "opacity-100 translate-y-0 sm:translate-y-6"
+                        : "opacity-0 translate-y-10 sm:translate-y-20"
                     }`}
                   >
                     <img
                       src={step.image}
                       alt={step.title}
-                      className="w-full h-80 object-cover border-8 border-white rounded-2xl"
+                      className="w-full h-48 sm:h-64 md:h-72 lg:h-80 object-cover border-4 sm:border-6 md:border-8 border-white rounded-xl sm:rounded-2xl"
                     />
                   </div>
 
@@ -175,22 +175,22 @@ const ProcessTimeline = () => {
                         : "md:col-start-1"
                     } transition-all duration-700 ${
                       visibleSteps[index]
-                        ? "opacity-100 -translate-y-10"
-                        : "opacity-0 translate-y-12"
+                        ? "opacity-100 translate-y-0 md:-translate-y-10"
+                        : "opacity-0 translate-y-8 md:translate-y-12"
                     }`}
                   >
-                    <div className="bg-white rounded-xl p-6">
+                    <div className="bg-white rounded-lg sm:rounded-xl p-5 sm:p-6 md:p-7 lg:p-8">
                       <div className="inline-block mb-3">
                         <span className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full uppercase tracking-wider">
                           Step {step.id}
                         </span>
                       </div>
 
-                      <h3 className="text-3xl font-bold mb-4 text-gray-900">
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-gray-900">
                         {step.title}
                       </h3>
 
-                      <p className="text-gray-600 leading-relaxed text-base">
+                      <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                         {step.description}
                       </p>
                     </div>
@@ -198,13 +198,13 @@ const ProcessTimeline = () => {
                 </div>
 
                 {/* Mobile Node */}
-                <div className="md:hidden mt-8 flex justify-center">
+                <div className="md:hidden mt-6 sm:mt-8 flex justify-center">
                   <div
-                    className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                      visibleSteps[index] ? "bg-black" : "bg-gray-300"
+                    className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-500 ${
+                      visibleSteps[index] ? "bg-black scale-100" : "bg-gray-300 scale-90"
                     }`}
                   >
-                    <span className="text-sm font-medium text-white">
+                    <span className="text-sm sm:text-base font-medium text-white">
                       {step.id}
                     </span>
                   </div>
