@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Gallery = ({ property }) => {
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const images = [
+    const defaultImages = [
         {
             id: 1,
             url: property?.image || "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=800&fit=crop",
@@ -25,6 +25,8 @@ const Gallery = ({ property }) => {
             alt: "Modern home exterior angle"
         }
     ];
+
+    const images = (property?.images && property.images.length >= 4) ? property.images : defaultImages;
 
     return (
         <section className="w-full bg-[#F7F5EE] px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20">

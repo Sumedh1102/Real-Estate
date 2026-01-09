@@ -1,35 +1,35 @@
 export default function RealEstateSidekick() {
   const columns = [
     {
-      title: "Verified listings you can trust",
+      title: "Verified properties you can trust",
       items: [
-        "Every property checked for accuracy",
-        "No fake or outdated information",
-        "Transparent details, zero surprises"
+        "All listings personally verified by our team",
+        "Accurate pricing, location, and project details",
+        "No fake listings or misleading information"
       ]
     },
     {
-      title: "Local experts, real guidance",
+      title: "Local real estate experts in Palghar",
       items: [
-        "Agents who know the neighborhoods",
-        "Tips on schools commutes ",
-        "Honest advice tailored to you"
+        "Deep knowledge of Nalasopara East & nearby areas",
+        "Guidance on connectivity, schools, and amenities",
+        "Honest advice based on your budget and goals"
       ]
     },
     {
-      title: "Stress-free buying & selling",
+      title: "Stress-free property buying & selling",
       items: [
-        "We manage paperwork",
-        "Simple, step-by-step support",
-        "Smooth process from start to finish"
+        "Complete support with paperwork & documentation",
+        "Clear, step-by-step guidance throughout the process",
+        "Smooth coordination from site visit to registration"
       ]
     },
     {
-      title: "Fast tours & easy contact",
+      title: "Quick site visits & easy communication",
       items: [
-        "Schedule viewings in one click",
-        "Connect via phone WhatsApp",
-        "Quick response from our team"
+        "Fast scheduling for property site visits",
+        "Easy contact via phone and WhatsApp",
+        "Responsive support from our expert team"
       ]
     }
   ];
@@ -42,23 +42,22 @@ export default function RealEstateSidekick() {
         
         <div className="mb-8 sm:mb-10 md:mb-12">
           <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
-            {/* Label - Mobile: stacked, Desktop: left */}
+            {/* Label */}
             <div className="flex items-center gap-2 sm:pt-1">
               <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-sm bg-[#1a1a1a]" />
               <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium">
-                Neighborhood
+                Why Choose Us
               </span>
             </div>
             
-            {/* Heading - Mobile: below label, Desktop: right side */}
+            {/* Heading */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-40">
-              Where you live matters
+              Trusted real estate guidance
               <br />
-              —pick the perfect spot
+              —built around your future
             </h2>
           </div>
         </div>
-
 
         {/* Feature Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-14">
@@ -67,17 +66,17 @@ export default function RealEstateSidekick() {
               key={colIndex}
               className="relative group transition-all duration-200 p-6 -m-6 rounded-lg"
             >
-             {/* Start Divider (only for first column) */}
+              {/* Start Divider */}
               {colIndex === 0 && (
                 <div className="hidden lg:block absolute top-0 -left-7 w-px h-full bg-black" />
               )}
               
-              {/* Middle Divider (your existing logic – unchanged) */}
+              {/* Middle Divider */}
               {colIndex < columns.length - 1 && (
                 <div className="hidden lg:block absolute top-0 -right-7 w-px h-full bg-black" />
               )}
               
-              {/* End Divider (only for last column) */}
+              {/* End Divider */}
               {colIndex === columns.length - 1 && (
                 <div className="hidden lg:block absolute top-0 -right-7 w-px h-full bg-black" />
               )}

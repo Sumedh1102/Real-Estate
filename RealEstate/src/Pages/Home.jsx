@@ -14,16 +14,33 @@ const Home = () => {
   return (
     <>
       <div className='overflow-hidden'>
-        <Parallex />
-        <PropertyComponent />
-        <Grid />
-        <Services />
-        <Uniqueness />
-        <Ouragency />
-        <Timeline />
-        <Slider />
-        <Blogs />
-        <Faq />
+        <div id="home">
+          <Parallex />
+        </div>
+        <div id="properties">
+          <PropertyComponent />
+        </div>
+        <div id="services">
+          <Services />
+        </div>
+        <div id="why-us">
+          <Uniqueness />
+        </div>
+        <div id="about">
+          <Ouragency />
+        </div>
+        <div id="process">
+          <Timeline />
+        </div>
+        <div id="reviews">
+          <Slider />
+        </div>
+        <div id="blogs">
+          <Blogs />
+        </div>
+        <div id="faq">
+          <Faq />
+        </div>
       </div>
     </>
   )

@@ -4,39 +4,39 @@ import { useState } from "react"
 
 const services = [
   {
-    title: "Buy a property",
+    title: "Buy a Property",
     description:
-      "Find your dream home with local experts who understand every street, price trend, and hidden gem. We make buying smooth, transparent, and exciting.",
+      "We help you find the right home in Nalasopara East and nearby areas by understanding your budget, lifestyle, and future goals. From site visits to final registration, our experts guide you through every step with complete transparency.",
   },
   {
-    title: "Sell your property",
+    title: "Sell Your Property",
     description:
-      "From pricing to closing, we handle every detail to help you sell faster and for the best value — with zero guesswork.",
+      "Get the best value for your property with accurate market pricing, strategic promotion, and skilled negotiation. We manage everything from listing to closing, ensuring a smooth and profitable selling experience.",
   },
   {
-    title: "Rent & lease",
+    title: "Rent & Lease Assistance",
     description:
-      "Whether you're finding a place to live or renting out your property, we make leasing easy, safe, and stress-free.",
+      "Whether you are looking to rent a home or lease out your property, we connect you with verified tenants and genuine listings. Our process ensures legal clarity, timely agreements, and stress-free transactions.",
   },
   {
-    title: "Property management",
+    title: "Property Investment Advisory",
     description:
-      "We take care of your property like it's our own — ensuring steady returns, reliable tenants, and peace of mind all year round.",
+      "Make informed real estate investments with expert guidance on high-growth locations, pre-launch projects, and rental-yield opportunities in Palghar district. We focus on long-term returns and risk-aware decisions.",
   },
   {
-    title: "Property management",
+    title: "Documentation & Legal Support",
     description:
-      "We take care of your property like it's our own — ensuring steady returns, reliable tenants, and peace of mind all year round.",
+      "We assist with all property-related documentation including agreement to sale, sale deed, registration, and coordination with legal professionals—ensuring compliance, accuracy, and peace of mind.",
   },
   {
-    title: "Property management",
+    title: "Home Loan Assistance",
     description:
-      "We take care of your property like it's our own — ensuring steady returns, reliable tenants, and peace of mind all year round.",
+      "Our team helps you secure the right home loan by coordinating with trusted banks and financial institutions. From eligibility checks to approval support, we simplify the entire loan process for you.",
   },
   {
-    title: "Property management",
+    title: "End-to-End Property Consulting",
     description:
-      "We take care of your property like it's our own — ensuring steady returns, reliable tenants, and peace of mind all year round.",
+      "From initial consultation to post-purchase support, we offer complete real estate consulting services tailored to your needs. Our client-first approach ensures clarity, confidence, and long-term satisfaction.",
   },
 ]
 
@@ -50,24 +50,24 @@ export default function ServicesSection() {
   return (
     <section className="w-full bg-[#F5F1E9]">
       <div className="mx-auto max-w-9xl px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32">
-               {/* Header */}
+        {/* Header */}
         <div className="border-t border-black/10 mb-6 sm:mb-8"></div>
-        
+
         <div className="mb-8 sm:mb-10 md:mb-12">
           <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
-            {/* Label - Mobile: stacked, Desktop: left */}
+            {/* Label */}
             <div className="flex items-center gap-2 sm:pt-1">
               <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-sm bg-[#1a1a1a]" />
               <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium">
-                Neighborhood
+                Services
               </span>
             </div>
-            
-            {/* Heading - Mobile: below label, Desktop: right side */}
+
+            {/* Heading */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-40">
-              Where you live matters
+              Complete real estate solutions
               <br />
-              —pick the perfect spot
+              —built around your needs
             </h2>
           </div>
         </div>
@@ -81,10 +81,10 @@ export default function ServicesSection() {
               <div key={service.title}>
                 <div
                   onClick={() => handleToggle(index)}
-                  className={`
+                  className="
                     group flex cursor-pointer items-start gap-3 px-2 py-6 transition-colors duration-300 ease-in-out
                     sm:gap-4 sm:px-3 sm:py-7 md:gap-5 md:py-9
-                  `}
+                  "
                 >
                   {/* Plus Icon */}
                   <div
@@ -105,18 +105,29 @@ export default function ServicesSection() {
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M12 4v16m8-8H4"
+                      />
                     </svg>
                   </div>
 
                   {/* Content */}
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-base font-semibold text-black sm:text-lg md:text-xl">{service.title}</h3>
+                    <h3 className="text-base font-semibold text-black sm:text-lg md:text-xl">
+                      {service.title}
+                    </h3>
 
                     <div
                       className={`
                         grid transition-all duration-350 ease-out
-                        ${isOpen ? "mt-2 grid-rows-[1fr] opacity-100 sm:mt-3" : "grid-rows-[0fr] opacity-0"}
+                        ${
+                          isOpen
+                            ? "mt-2 grid-rows-[1fr] opacity-100 sm:mt-3"
+                            : "grid-rows-[0fr] opacity-0"
+                        }
                       `}
                     >
                       <div className="overflow-hidden">
@@ -129,7 +140,9 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Divider */}
-                {index < services.length - 1 && <div className="border-t border-[#e2e0d6]" />}
+                {index < services.length - 1 && (
+                  <div className="border-t border-[#e2e0d6]" />
+                )}
               </div>
             )
           })}

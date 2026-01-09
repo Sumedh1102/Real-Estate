@@ -3,31 +3,6 @@ import { ChevronRight, Linkedin, Facebook, Instagram, Youtube } from "lucide-rea
 
 /* ---------------------- Static Data ---------------------- */
 
-const FOOTER_COLUMNS = [
-  {
-    title: "PAGES",
-    links: [
-      "Home",
-      "About us",
-      "Services",
-      "Blogs",
-      "Career",
-      "Reviews",
-      "Sell Properties",
-      "Submit Properties",
-      "Contact",
-    ],
-  },
-  {
-    title: "EXPLORE PROPERTIES BY",
-    links: ["Categories", "Agents", "Neighborhoods"],
-  },
-  {
-    title: "CATEGORIES",
-    links: ["All", "Villa", "Single Family Home", "Luxury Homes", "Apartment", "Office Space", "Commercial", "Land"],
-  },
-]
-
 const TikTokIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
     <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
@@ -67,34 +42,6 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-black text-[#F6F2E8] overflow-hidden">
-      <div className="relative z-10 px-4 sm:px-6 md:px-12 lg:px-20 pt-16 sm:pt-24 md:pt-32 pb-16">
-        {/* Navigation Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-20 mb-16 sm:mb-24 md:mb-32">
-          {FOOTER_COLUMNS.map(({ title, links }) => (
-            <div key={title}>
-              <div className="flex items-center gap-2 mb-6">
-                <span className="w-2 h-2 rounded-[2px] bg-[#D4A574]" />
-                <h3 className="text-xs font-normal  text-white">{title}</h3>
-              </div>
-
-              <nav>
-                {links.map((link) => (
-                  <a
-                    key={link}
-                    href="#"
-                    className="group flex items-center justify-between py-4 border-l border-b border-[#2A2A2A] transition-all duration-300 hover:bg-[#0A0A0A]"
-                  >
-                    <span className="text-[15px] transition-colors duration-300 group-hover:text-white ml-2">
-                      {link}
-                    </span>
-                    <ChevronRight className="w-4 h-4 opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1" />
-                  </a>
-                ))}
-              </nav>
-            </div>
-          ))}
-        </div>
-
         {/* Giant Brand Typography */}
         <div className="relative mb-16 sm:mb-24 md:mb-32">
           <div className="flex flex-col items-center">
@@ -168,7 +115,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
     </footer>
   )
 }

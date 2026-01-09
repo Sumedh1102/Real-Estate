@@ -9,27 +9,27 @@ const ProcessTimeline = () => {
   const steps = [
     {
       id: "01",
-      title: "Search & explore",
+      title: "Explore verified properties",
       description:
-        "Browse verified property listings by price, location, and lifestyle. Filter easily with smart tools and discover homes that fit your vibe. Start your journey from anywhere, right on your screen.",
+        "Browse verified residential and investment properties in Nalasopara East and nearby areas. Filter by budget, location, and property type to find homes that truly match your needs and future plans.",
       image:
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop",
       align: "right",
     },
     {
       id: "02",
-      title: "Book a tour",
+      title: "Schedule site visits",
       description:
-        "Pick your favorite properties and schedule tours online in seconds. Our team confirms quickly and arranges convenient times for you. See homes in person or through guided virtual tours.",
+        "Shortlist your preferred properties and book site visits with ease. Our team coordinates quickly and arranges convenient timings, whether you prefer physical visits or guided walkthroughs.",
       image:
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop&sat=-100",
       align: "left",
     },
     {
       id: "03",
-      title: "Make your move",
+      title: "Close with confidence",
       description:
-        "Get expert help with offers, negotiations, and all the paperwork. We guide you step by step, keeping everything clear and stress-free. From first offer to final signature, we're with you all the way.",
+        "From price negotiations to documentation and registration, we handle the entire process for you. Enjoy clear guidance, legal transparency, and stress-free support until you receive possession.",
       image:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=500&fit=crop",
       align: "right",
@@ -80,24 +80,24 @@ const ProcessTimeline = () => {
   return (
     <div className="min-h-screen bg-[#F5F1E9] pt-12 sm:pt-16 md:pt-20 lg:pt-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1350px] mx-auto">
-                {/* Header */}
+        {/* Header */}
         <div className="border-t border-black/10 mb-6 sm:mb-8"></div>
         
         <div className="mb-8 sm:mb-10 md:mb-12">
           <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
-            {/* Label - Mobile: stacked, Desktop: left */}
+            {/* Label */}
             <div className="flex items-center gap-2 sm:pt-1">
               <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-sm bg-[#1a1a1a]" />
               <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium">
-                Neighborhood
+                Our Process
               </span>
             </div>
             
-            {/* Heading - Mobile: below label, Desktop: right side */}
+            {/* Heading */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight md:translate-x-20 lg:translate-x-40">
-              Where you live matters
+              A simple, transparent way
               <br />
-              —pick the perfect spot
+              —to buy or invest in property
             </h2>
           </div>
         </div>
@@ -201,7 +201,9 @@ const ProcessTimeline = () => {
                 <div className="md:hidden mt-6 sm:mt-8 flex justify-center">
                   <div
                     className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-500 ${
-                      visibleSteps[index] ? "bg-black scale-100" : "bg-gray-300 scale-90"
+                      visibleSteps[index]
+                        ? "bg-black scale-100"
+                        : "bg-gray-300 scale-90"
                     }`}
                   >
                     <span className="text-sm sm:text-base font-medium text-white">

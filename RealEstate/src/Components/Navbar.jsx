@@ -1,96 +1,126 @@
-import React, { useState } from 'react';
-import { ChevronDown, ArrowRight, Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { ChevronDown, ArrowRight, Menu, X } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+
   const navItems = [
+    "Home",
+    "Properties",
+    "Services",
+    "Why Us",
     "About",
-    "Submit Property",
+    "Process",
     "Reviews",
     "Blogs",
+    "FAQ",
   ];
+
+  // 🔹 WhatsApp configuration
+  const ownerWhatsAppNumber = "919999999999"; // CHANGE THIS
+  const whatsappMessage =
+    "Hello, I’m interested in your property listings. Please share more details.";
+
+  const whatsappURL = `https://wa.me/${ownerWhatsAppNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
 
   return (
     <>
-        <header className="fixed top-0 left-0 right-0 w-full rounded-xl z-50 transition-transform duration-300 max-w-[1400px] mt-5 mx-auto bg-white">
-        <nav className="max-w-[1400px] mx-auto px-8 lg:px-3 h-16 flex items-center justify-between">
-          {/* Logo Section */}
-          <div className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity duration-200">
+      <header className="fixed top-0 left-0 right-0 z-50 w-full max-w-[1400px] mx-auto mt-5 bg-white rounded-xl">
+        <nav className="flex items-center justify-between h-16 px-8 lg:px-3">
+          {/* LOGO */}
+          <div className="flex items-center gap-3 cursor-pointer">
             <div className="w-10 h-10 bg-[#F5F1E9] rounded-full flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-black">
-                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" 
-                      stroke="currentColor" 
-                      strokeWidth="2" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round"/>
-                <path d="M9 22V12H15V22" 
-                      stroke="currentColor" 
-                      strokeWidth="2" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round"/>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M3 9L12 2L21 9V20C21 20.53 20.79 21.04 20.41 21.41C20.04 21.79 19.53 22 19 22H5C4.47 22 3.96 21.79 3.59 21.41C3.21 21.04 3 20.53 3 20V9Z"
+                  stroke="black"
+                  strokeWidth="2"
+                />
+                <path d="M9 22V12H15V22" stroke="black" strokeWidth="2" />
               </svg>
             </div>
-            <div className="flex flex-col leading-tight">
-              <span className="text-xl font-black tracking-wide">REA
-                <span className='font-thin'>
-                LIST
-                </span>
-                </span>
-              <span className="text-[6px] font-medium tracking-wider text-gray-700">REAL ESTATE AGENCY</span>
+            <div className="leading-tight">
+              <h1 className="text-xl font-black">
+                REA<span className="font-thin">LIST</span>
+              </h1>
+              <p className="text-[6px] tracking-wider">REAL ESTATE AGENCY</p>
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-6">
+          {/* DESKTOP MENU */}
+          <div className="hidden lg:flex gap-6">
             {navItems.map((item, index) => (
               <a
                 key={index}
-                href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
-                className="relative flex items-center gap-1 text-[15px] font-semibold text-black hover:opacity-70 transition-opacity duration-200 tracking-wide uppercase text-sm"
+                href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                className="text-sm font-semibold uppercase hover:opacity-70"
               >
                 {item}
-                {item === "Explore" && (
-                  <ChevronDown className="w-4 h-4 transition-transform duration-200 hover:translate-y-0.5" />
-                )}
               </a>
             ))}
           </div>
 
-          {/* CTA Button - Desktop */}
-          <button className="hidden lg:flex items-center gap-2 bg-black text-white px-5 py-3.5 rounded-xl font-medium text-sm hover:scale-105 transition-all duration-250 uppercase tracking-wide">
-            Contact Us
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          {/* CTA BUTTON (DESKTOP) */}
+          <a
+            href={whatsappURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:flex items-center gap-2 
+            bg-black text-white px-6 py-3.5 rounded-xl 
+            font-medium text-sm uppercase tracking-wide 
+            transition-all duration-300 
+            hover:bg-[#25D366] group"
+          >
+            <span className="transition-all duration-300 group-hover:translate-x-1">
+              Contact Us
+            </span>
 
-          {/* Mobile Menu Button */}
+            {/* Arrow default */}
+            <ArrowRight className="w-4 h-4 group-hover:hidden" />
+
+            {/* WhatsApp on hover */}
+            <FaWhatsapp className="w-5 h-5 hidden group-hover:block" />
+          </a>
+
+          {/* MOBILE MENU BUTTON */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 hover:bg-black/5 rounded-lg transition-colors"
+            className="lg:hidden p-2"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X /> : <Menu />}
           </button>
         </nav>
 
-        {/* Mobile Menu */}
+        {/* MOBILE MENU */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-[#FBF8EE] border-t border-black/10">
-            <div className="max-w-[1400px] mx-auto px-8 py-6 flex flex-col gap-4">
+          <div className="lg:hidden bg-[#FBF8EE] border-t">
+            <div className="px-8 py-6 flex flex-col gap-4">
               {navItems.map((item, index) => (
                 <a
                   key={index}
-                  href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="flex items-center justify-between text-base font-medium text-black hover:opacity-70 transition-opacity py-2 uppercase tracking-wide"
+                  href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
                   onClick={() => setMobileMenuOpen(false)}
+                  className="uppercase"
                 >
                   {item}
-                  {item === "Explore" && <ChevronDown className="w-4 h-4" />}
                 </a>
               ))}
-              <button className="flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-full font-medium text-sm hover:scale-105 transition-transform mt-2 uppercase tracking-wide">
-                Buy Template
-                <ArrowRight className="w-4 h-4" />
-              </button>
+
+              {/* MOBILE CTA */}
+              <a
+                href={whatsappURL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 
+                bg-black text-white px-6 py-3 rounded-full 
+                hover:bg-[#25D366] transition"
+              >
+                Contact Us
+                <FaWhatsapp className="w-5 h-5" />
+              </a>
             </div>
           </div>
         )}

@@ -29,14 +29,6 @@ export default function Home() {
               <PropertyCard key={index} {...property} />
             ))}
           </div>
-
-          {/* CTA Button */}
-          <div className="flex justify-center mt-12">
-            <button className="flex items-center gap-2 bg-[#1a1a1a] text-white px-8 py-3.5 rounded-xl text-sm font-medium uppercase tracking-wide hover:scale-105 hover:shadow-xl transition-all duration-300">
-              View Properties
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
         </div>
       </section>
     </main>

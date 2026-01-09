@@ -2,25 +2,25 @@ import React from "react";
 
 const AgencyComparison = () => {
   const otherAgencies = [
-    "Pushy sales approach",
-    "Generic listings, often outdated",
-    "Complicated process full of paperwork",
-    "Hard to reach agents",
-    "One-size-fits-all service",
-    "Focus only on closing deals",
-    "Limited area knowledge",
-    "Confusing websites and search tools",
+    "High-pressure sales tactics",
+    "Unverified or outdated property listings",
+    "Complex process with unclear paperwork",
+    "Slow or unresponsive agents",
+    "Generic solutions for every client",
+    "Deal-focused, not client-focused",
+    "Limited knowledge of local areas",
+    "Cluttered and confusing property search",
   ];
 
   const ourAgency = [
-    "Friendly guidance with no pressure",
-    "Verified listings updated daily",
-    "Step-by-step support, we handle all",
-    "Easy contact anytime",
-    "Personalized advice for your needs",
-    "Focus on building relationships",
-    "Local experts who know inside-out",
-    "Simple and fast property search",
+    "Honest guidance with zero pressure",
+    "Verified and regularly updated listings",
+    "End-to-end support, we handle documentation",
+    "Quick and easy communication anytime",
+    "Personalized advice based on your goals",
+    "Long-term relationships over quick deals",
+    "Local experts in Nalasopara East & Palghar",
+    "Simple, fast, and transparent property search",
   ];
 
   return (
@@ -41,7 +41,7 @@ const AgencyComparison = () => {
           {/* LEFT COLUMN */}
           <div className="bg-white/5 p-4 sm:p-6 lg:p-8">
             <h2 className="text-2xl sm:text-3xl font-normal text-center text-gray-900 mb-5">
-              Other agencies
+              Typical real estate agencies
             </h2>
 
             <div className="space-y-0.5">
@@ -76,7 +76,7 @@ const AgencyComparison = () => {
           {/* RIGHT COLUMN */}
           <div className="bg-black p-4 sm:p-6 lg:p-8">
             <h2 className="text-2xl sm:text-3xl font-normal text-center text-white mb-5">
-              Our agency
+              BEST Deal Property
             </h2>
 
             <div className="space-y-0.5">
