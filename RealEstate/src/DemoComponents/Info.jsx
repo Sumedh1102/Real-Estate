@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tag, DollarSign, Bed, Bath, Maximize2, Expand, Calendar, Layers, Car, FileText, Download } from 'lucide-react';
+import { Tag, DollarSign, Bed, Building2, Maximize2, Expand, Calendar, Layers, Car, FileText, Download } from 'lucide-react';
 
 const Info = ({ property }) => {
     // Default demo data if property is missing specific fields
@@ -15,8 +15,8 @@ const Info = ({ property }) => {
         [
             { icon: Tag, label: 'Type', value: property?.type === 'rent' ? 'For Rent' : 'For Sale' },
             { icon: DollarSign, label: 'Price', value: property?.price || '$0' },
-            { icon: Bed, label: 'Beds', value: property?.beds || '0' },
-            { icon: Bath, label: 'Baths', value: property?.baths || '0' },
+            { icon: Bed, label: 'BHK', value: property?.bhk || 'N/A' },
+            { icon: Building2, label: 'Builder', value: property?.builder || 'N/A' },
             { icon: Maximize2, label: 'Size', value: property?.sqft || '0 sq ft' }
         ],
         [

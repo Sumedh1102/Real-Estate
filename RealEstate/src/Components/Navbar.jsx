@@ -32,21 +32,15 @@ const Navbar = () => {
         <nav className="flex items-center justify-between h-16 px-8 lg:px-3">
           {/* LOGO */}
           <div className="flex items-center gap-3 cursor-pointer">
-            <div className="w-10 h-10 bg-[#F5F1E9] rounded-full flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M3 9L12 2L21 9V20C21 20.53 20.79 21.04 20.41 21.41C20.04 21.79 19.53 22 19 22H5C4.47 22 3.96 21.79 3.59 21.41C3.21 21.04 3 20.53 3 20V9Z"
-                  stroke="black"
-                  strokeWidth="2"
-                />
-                <path d="M9 22V12H15V22" stroke="black" strokeWidth="2" />
-              </svg>
+            <div className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center">
+             <img src="https://i.postimg.cc/YSvpJ7gK/Chat-GPT-Image-Jan-12-2026-07-17-29-PM.png" alt="" />
             </div>
             <div className="leading-tight">
-              <h1 className="text-xl font-black">
-                REA<span className="font-thin">LIST</span>
+              <h1 className="text-xl font-thin">
+                BEST<span className="font-black text-blue-500">DEAL</span>
+                <span className="font-thin">PROPERTY</span>
               </h1>
-              <p className="text-[6px] tracking-wider">REAL ESTATE AGENCY</p>
+              <p className="text-[6px] tracking-wider ml-14">REAL ESTATE AGENCY</p>
             </div>
           </div>
 
