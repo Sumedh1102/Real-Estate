@@ -8,7 +8,7 @@ const testimonials = [
     quote: '"They understood exactly what I was looking for."',
     name: 'Rohit Sharma',
     location: 'HOME BUYER, NALASOPARA EAST',
-    image: 'https://images.unsplash.com/photo-1558159065-6c3f0d9d1c05?w=800&h=900&fit=crop',
+    image: 'https://i.pinimg.com/736x/df/b7/f6/dfb7f61cd947d9e217f75feb944654fd.jpg',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop'
   },
   {
@@ -26,7 +26,7 @@ const testimonials = [
     quote: '"Transparent process and honest advice throughout."',
     name: 'Amit Verma',
     location: 'PROPERTY INVESTOR, MUMBAI',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=900&fit=crop',
+    image: 'https://i.postimg.cc/MTB20bf2/Chat-GPT-Image-Jan-12-2026-08-08-50-PM.png',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop'
   },
   {
@@ -44,7 +44,7 @@ const testimonials = [
     quote: '"Best decision for my family’s future."',
     name: 'Neha Kulkarni',
     location: 'HOME BUYER, NALASOPARA',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=900&fit=crop',
+    image: 'https://i.postimg.cc/fTpcpcJC/image.png',
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop'
   },
   {

@@ -13,7 +13,7 @@ const ProcessTimeline = () => {
       description:
         "Browse verified residential and investment properties in Nalasopara East and nearby areas. Filter by budget, location, and property type to find homes that truly match your needs and future plans.",
       image:
-        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop",
+        "https://i.postimg.cc/fyypbc7t/Chat-GPT-Image-Jan-12-2026-07-55-58-PM.png",
       align: "right",
     },
     {
@@ -22,7 +22,7 @@ const ProcessTimeline = () => {
       description:
         "Shortlist your preferred properties and book site visits with ease. Our team coordinates quickly and arranges convenient timings, whether you prefer physical visits or guided walkthroughs.",
       image:
-        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop&sat=-100",
+        "https://i.postimg.cc/NMsfpntb/Chat-GPT-Image-Jan-12-2026-08-04-52-PM.png",
       align: "left",
     },
     {
@@ -31,7 +31,7 @@ const ProcessTimeline = () => {
       description:
         "From price negotiations to documentation and registration, we handle the entire process for you. Enjoy clear guidance, legal transparency, and stress-free support until you receive possession.",
       image:
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=500&fit=crop",
+        "https://i.pinimg.com/1200x/85/f4/c6/85f4c6cdc0c2fa327fb259f547d16680.jpg",
       align: "right",
     },
   ];
@@ -163,7 +163,7 @@ const ProcessTimeline = () => {
                     <img
                       src={step.image}
                       alt={step.title}
-                      className="w-full h-48 sm:h-64 md:h-72 lg:h-80 object-cover border-4 sm:border-6 md:border-8 border-white rounded-xl sm:rounded-2xl"
+                      className="w-full h-48 sm:h-64 md:h-72 lg:h-96 object-cover border-4 sm:border-6 rounded-3xl"
                     />
                   </div>
 
