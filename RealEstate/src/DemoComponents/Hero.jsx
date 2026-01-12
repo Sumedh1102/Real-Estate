@@ -20,7 +20,7 @@ const Hero = ({ property }) => {
         <div className="relative h-full flex items-center justify-center px-6 md:px-16">
           <div className="max-w-6xl w-full text-center">
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-4xl font-bold leading-tight text-[#1A1A1A] mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-[#1A1A1A] mb-6">
               {title}
             </h1>
             
