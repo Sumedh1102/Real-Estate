@@ -7,7 +7,7 @@ const BlogsSection = () => {
   const blogs = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+      image: "https://i.pinimg.com/1200x/c5/e4/cc/c5e4cc20bfc08f1621b1062ef8b4188d.jpg",
       date: "JAN 12, 2025",
       category: "BUYER GUIDE",
       title: "First-time home buying in Nalasopara East — a complete guide for new buyers",
@@ -17,7 +17,7 @@ const BlogsSection = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+      image: "https://i.pinimg.com/1200x/d0/f1/ef/d0f1ef8fc01cb22306aa2b0ed0dbe99b.jpg",
       date: "FEB 02, 2025",
       category: "OWNER GUIDE",
       title: "How to rent out your property in Palghar safely — documents, pricing & tenants",
@@ -27,7 +27,7 @@ const BlogsSection = () => {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+      image: "https://i.pinimg.com/1200x/27/2d/5e/272d5e00f6ab6f42fcc37ab21b701d7b.jpg",
       date: "MAR 08, 2025",
       category: "MARKET INSIGHTS",
       title: "Real estate trends in Palghar 2025 — prices, growth areas & investment scope",

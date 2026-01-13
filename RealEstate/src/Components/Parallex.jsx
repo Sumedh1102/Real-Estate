@@ -16,7 +16,7 @@ export default function Home() {
 
   // Flower layer transforms
   const flowerY = useTransform(scrollYProgress, [0, 1], [0, -120])
-  const flowerBlur = useTransform(scrollYProgress, [0, 1], [8, 8])
+  const flowerBlur = useTransform(scrollYProgress, [0, 1], [0, 20])
   const flowerOpacity = useTransform(scrollYProgress, [0, 1], [1, 0.8])
 
   return (
@@ -32,7 +32,7 @@ export default function Home() {
           }}
         >
           <img
-            src="https://i.postimg.cc/K8XtZRHH/Chat-GPT-Image-Dec-12-2025-09-13-04-PM.png"
+            src="https://i.postimg.cc/s2dLnNMn/Chat-GPT-Image-Jan-13-2026-02-54-34-PM.png"
             alt="House background"
             className="h-full w-full object-cover object-top"
           />
@@ -40,7 +40,7 @@ export default function Home() {
 
         {/* Foreground Flower Layer - z-10 */}
         <motion.div
-          className="absolute inset-x-0 bottom-0 z-10 h-[45%]"
+          className="absolute inset-x-0 bottom-0 z-10 h-[100%]"
           style={{
             y: flowerY,
             opacity: flowerOpacity,
@@ -48,9 +48,9 @@ export default function Home() {
           }}
         >
           <img
-            src="https://i.postimg.cc/9FyBS6m6/Image-12-12-25-at-9-14-PM.png"
+            src="https://i.postimg.cc/447SgGpq/Chat-GPT-Image-Jan-13-2026-02-55-48-PM-Photoroom.png"
             alt="Flower field"
-            className="h-full w-full object-cover object-top translate-y-28"
+            className="h-full w-full object-cover object-top translate-y-20"
           />
         </motion.div>
 
