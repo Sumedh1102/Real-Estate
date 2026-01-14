@@ -101,17 +101,13 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#2A2A2A]">
           <div className="flex flex-col items-center gap-4 text-xs sm:text-sm text-gray-500 md:flex-row md:justify-between">
-            <div className="flex gap-4 sm:gap-6">
+            <div className="flex gap-4 sm:gap-6 pb-7">
               <a href="#" className="hover:text-[#F6F2E8] transition-colors">
                 PRIVACY POLICY
               </a>
               <a href="#" className="hover:text-[#F6F2E8] transition-colors">
                 TERMS
               </a>
-            </div>
-            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center">
-              <span>©TEMPLATE BY REALMEHEDI</span>
-              <span>BUILT IN FRAMER</span>
             </div>
           </div>
         </div>

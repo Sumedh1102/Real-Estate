@@ -44,7 +44,7 @@ const FAQSection = () => {
     {
       question: "Do you help with home loans or financing?",
       answer:
-        "While we don’t provide loans directly, we work closely with trusted banks and financial institutions. We help you connect with loan advisors to get competitive interest rates and smooth approvals."
+        "While we don't provide loans directly, we work closely with trusted banks and financial institutions. We help you connect with loan advisors to get competitive interest rates and smooth approvals."
     },
     {
       question: "Can you assist first-time homebuyers?",
@@ -52,7 +52,7 @@ const FAQSection = () => {
         "Absolutely. We specialize in guiding first-time homebuyers through every step—from budgeting and shortlisting to documentation and possession—making the process simple and stress-free."
     },
     {
-      question: "I’m buying property from another city. Can you help?",
+      question: "I'm buying property from another city. Can you help?",
       answer:
         "Yes. We frequently assist outstation buyers by offering virtual site visits, detailed project explanations, and end-to-end coordination so you can buy with confidence from anywhere."
     }
@@ -80,8 +80,8 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="min-h-screen pb-10" style={{ backgroundColor: '#F5F1E9' }}>
-      <div className="max-w-[1400px] mx-auto ">
+    <div className="min-h-screen pb-10 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F5F1E9' }}>
+      <div className="max-w-[1400px] mx-auto">
         {/* Header */}
         <div className="border-t border-black/10 mb-6 sm:mb-8"></div>
         
@@ -96,22 +96,22 @@ const FAQSection = () => {
             </div>
             
             {/* Heading */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-40">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-0 xl:translate-x-40">
               Answers to common property questions
-              <br />
-              —clear, honest, and helpful
+              <br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>—clear, honest, and helpful
             </h2>
           </div>
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid gap-12 lg:gap-12 items-start lg:grid-cols-[37%_65%]">
+        <div className="grid gap-8 lg:gap-12 items-start lg:grid-cols-[40%_58%] xl:grid-cols-[37%_60%]">
           {/* Left Column - Contact Form */}
-          <div className="lg:sticky lg:top-24">
-            <div className="rounded-xl p-8 lg:p-10 shadow-sm" style={{ backgroundColor: '#FAF8F0' }}>
-              <p className="text-lg lg:text-xl mb-8 leading-relaxed">
-                Have a property-related question?<br />
-                Our experts are just a message away.
+          <div className="lg:sticky lg:top-24 w-full">
+            <div className="rounded-xl p-6 sm:p-8 lg:p-10 shadow-sm" style={{ backgroundColor: '#FAF8F0' }}>
+              <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 leading-relaxed">
+                Have a property-related question?<br className="hidden sm:block" />
+                <span className="sm:hidden"> </span>Our experts are just a message away.
               </p>
 
               <div className="space-y-5">
@@ -159,34 +159,34 @@ const FAQSection = () => {
 
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-black text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:scale-[1.02] transition-all"
+                  className="w-full bg-black text-white py-3.5 sm:py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:scale-[1.02] transition-all text-sm sm:text-base"
                 >
                   SEND MESSAGE
-                  <ChevronRight size={20} />
+                  <ChevronRight size={20} className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
               </div>
             </div>
           </div>
 
           {/* Right Column - FAQ Accordion */}
-          <div className="space-y-0">
+          <div className="space-y-0 w-full">
             {faqs.map((faq, index) => (
               <div key={index} className="border-b border-gray-300">
                 <button
                   onClick={() => toggleFaq(index)}
-                  className="w-full py-6 flex items-start gap-4 text-left px-4 -mx-4 rounded-lg"
+                  className="w-full py-5 sm:py-6 flex items-start gap-3 sm:gap-4 text-left px-2 sm:px-4 -mx-2 sm:-mx-4 rounded-lg hover:bg-black/5 transition-colors"
                 >
-                  <div className={`w-9 h-9 pb-1 rounded-full border border-slate-400 flex items-center justify-center transition-transform ${openFaq === index ? 'rotate-45' : ''}`}>
-                    <span className="text-black text-2xl font-thin">+</span>
+                  <div className={`w-8 h-8 sm:w-9 sm:h-9 pb-1 rounded-full border border-slate-400 flex items-center justify-center flex-shrink-0 transition-transform ${openFaq === index ? 'rotate-45' : ''}`}>
+                    <span className="text-black text-xl sm:text-2xl font-thin">+</span>
                   </div>
-                  <span className="text-lg lg:text-xl font-medium flex-1">
+                  <span className="text-base sm:text-lg lg:text-xl font-medium flex-1 pt-1">
                     {faq.question}
                   </span>
                 </button>
 
                 <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                  <div className="pb-6 pl-14 pr-4">
-                    <p className="text-gray-600 leading-relaxed">
+                  <div className="pb-5 sm:pb-6 pl-11 sm:pl-14 pr-2 sm:pr-4">
+                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

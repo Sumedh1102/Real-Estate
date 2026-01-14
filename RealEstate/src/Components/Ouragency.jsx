@@ -27,10 +27,10 @@ const AgencyComparison = () => {
     <div className="w-full min-h-screen relative flex items-center justify-center py-6 px-4 sm:px-6">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-bottom"
         style={{
           backgroundImage:
-            "url('https://i.postimg.cc/jjRJbLhJ/Chat-GPT-Image-Dec-13-2025-05-07-15-PM.png')",
+            "url('https://i.postimg.cc/T25bCGsd/Chat-GPT-Image-Jan-14-2026-12-47-54-PM.png')",
         }}
       />
 
