@@ -112,18 +112,6 @@ export default function Home() {
                </span>
             </span>
           </motion.p>
-
-
-          {/* CTA Button */}
-          <motion.button
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="group mt-10 flex items-center gap-2 rounded-xl bg-white px-6 py-4 text-sm font-bold tracking-wide text-black transition-all duration-300"
-          >
-            VIEW PROPERTIES
-            <ChevronRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </motion.button>
         </div>
       </section>
     </main>

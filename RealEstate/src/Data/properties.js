@@ -1194,6 +1194,1027 @@ const properties = [
     ],
   }
 
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "elite-tower-virar-nalasopara-link-road-2",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Elite Tower",
+    address: "Virar-Nallasopara Link Road, Palghar, Maharashtra",
+    bhk: "1 BHK, Smart 2 BHK & Luxury 2 BHK",
+    builder: "Sunrise Developers",
+    sqft: "Smartly Planned Carpet Areas",
+    price: "₹30.99 Lakh Onwards",
+    description:
+      "Own not just a home, but a lifestyle filled with unmatched luxury! A premium G + 23 story tower with 19+ premium amenities located at Virar-Nallasopara Link Road.",
+    location: "for sale in Virar-Nallasopara Link Road, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "G + 23 Story Premium Tower",
+      "19+ Premium Amenities",
+      "Modern Clubhouse & Fitness Zone",
+      "Landscaped Gardens & Kids Play Area",
+      "Unbeatable Launch Prices",
+      "MAHARERA Reg. No.: P99000055061",
+    ],
+
+    apartmentSizes: [
+      { type: "1 BHK", area: "Starting from ₹30.99+ Lacs" },
+      { type: "Smart 2 BHK", area: "Starting from ₹35.99+ Lacs" },
+      { type: "Luxury 2 BHK", area: "Starting from ₹45.99+ Lacs" },
+    ],
+
+    amenities: [
+      { icon: "Building2", text: "Modern Clubhouse" },
+      { icon: "TreePine", text: "Landscaped Gardens" },
+      { icon: "Waves", text: "Kids Play Area" },
+      { icon: "Dumbbell", text: "Fitness Zone" },
+      { icon: "Shield", text: "24x7 Security" },
+      { icon: "Zap", text: "Power Backup" },
+      { icon: "Car", text: "Parking Facility" },
+      { icon: "Sparkles", text: "19+ Lifestyle Amenities" },
+    ],
+
+    interiorFeatures: [
+      {
+        feature: "Layout",
+        description: "Smartly designed layouts for efficient space utilization",
+      },
+      {
+        feature: "Living Area",
+        description: "Well-ventilated living spaces with natural lighting",
+      },
+      {
+        feature: "Kitchen",
+        description: "Modern kitchen with granite platform & modular provision",
+      },
+      {
+        feature: "Bedrooms",
+        description: "Comfortable bedrooms designed for luxury living",
+      },
+      {
+        feature: "Bathrooms",
+        description: "Premium sanitary fittings with anti-skid flooring",
+      },
+      {
+        feature: "Flooring",
+        description: "Vitrified tile flooring throughout the apartment",
+      },
+    ],
+
+    exteriorFeatures: [
+      {
+        feature: "Tower Design",
+        description: "Contemporary G+23 storey high-rise elevation",
+      },
+      {
+        feature: "Open Spaces",
+        description: "Landscaped gardens & recreational zones",
+      },
+      {
+        feature: "Safety",
+        description: "Fire safety systems & secured premises",
+      },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Lifestyle:",
+        text: "Luxury-filled lifestyle with modern amenities.",
+      },
+      {
+        label: "Location:",
+        text: "Prime location on Virar-Nallasopara Link Road.",
+      },
+      {
+        label: "Connectivity:",
+        text: "Excellent access to station and highway.",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Virar–Nalasopara Link Road", distance: "Direct Access" },
+      { amenity: "Nalasopara Railway Station", distance: "10–15 mins" },
+      { amenity: "Schools & Colleges", distance: "5–10 mins" },
+      { amenity: "Hospitals", distance: "10 mins" },
+      { amenity: "Shopping & Markets", distance: "5 mins" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/rFsp255w/Screenshot-2026-01-12-at-7-03-16-PM.png",
+        alt: "Elite Tower"
+      },
+      {
+        id: 2,
+        url: "https://i.postimg.cc/cLqGk3hW/Screenshot-2026-01-12-at-7-04-45-PM.png",
+        alt: "Contemporary home with landscaping"
+      },
+      {
+        id: 3,
+        url: "https://i.postimg.cc/5NDfcT4J/Screenshot-2026-01-12-at-7-04-05-PM.png",
+        alt: "Architectural detail facade"
+      },
+      {
+        id: 4,
+        url: "https://i.postimg.cc/rybBz4vC/Screenshot-2026-01-12-at-7-05-31-PM.png",
+        alt: "Modern home exterior angle"
+      }
+    ],
+
+    additionalInfo: [
+      { label: "Tower Configuration:", text: "G + 23 Story" },
+      { label: "Developer:", text: "Sunrise Developers" },
+      { label: "MAHARERA No.:", text: "P99000055061" },
+      { label: "Property Type:", text: "Residential Apartments" },
+      { label: "Tagline:", text: "Building Dreams for a Better Life!" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "comfort-empire-nalasopara-virar",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png", // Using placeholder/generic
+    title: "Comfort Empire",
+    address: "Nalasopara-Virar Link Road, Palghar, Maharashtra",
+    bhk: "1 & 2 BHK",
+    builder: "Comfort Group",
+    sqft: "471 - 695 Sq. Ft. Carpet Area",
+    price: "On Request",
+    description:
+      "Experience a world of luxury at Comfort Empire, offering thoughtfully designed homes with 30+ premium amenities on the Nalasopara-Virar Link Road.",
+    location: "for sale in Nalasopara-Virar Link Road, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "Sabse Bada Ghar - Spacious Carpet Areas",
+      "30+ Premium Lifestyle Amenities",
+      "Thoughtfully Designed 1 & 2 BHK Homes",
+      "Internal Amenities: Modular Kitchen, False Ceiling, etc.",
+      "Community Living with Elegance & Comfort",
+    ],
+
+    apartmentSizes: [
+      { type: "1 BHK", area: "471 sq.ft. Carpet" },
+      { type: "2 BHK", area: "616 sq.ft. Carpet" },
+      { type: "2 BHK", area: "695 sq.ft. Carpet" },
+    ],
+
+    amenities: [
+      { icon: "Building2", text: "Clubhouse" },
+      { icon: "Shield", text: "24x7 CCTV Surveillance" },
+      { icon: "Zap", text: "Fire Fighting System" },
+      { icon: "Droplets", text: "Water Tank (1000 ltr)" },
+      { icon: "Utensils", text: "Modular Kitchen" },
+      { icon: "Home", text: "False Ceiling" },
+      { icon: "Wind", text: "Light & Fan Fittings" },
+      { icon: "Grid", text: "Mosquito Net" },
+      { icon: "Umbrella", text: "Waterproofing" },
+      { icon: "Sparkles", text: "30+ Premium Amenities" },
+    ],
+
+    interiorFeatures: [
+      {
+        feature: "Kitchen",
+        description: "Modular kitchen provided",
+      },
+      {
+        feature: "Electrical",
+        description: "Fire fighting switches, lights, fans & geyser included",
+      },
+      {
+        feature: "Ceiling",
+        description: "False ceiling in living spaces",
+      },
+      {
+        feature: "Convenience",
+        description: "Mosquito nets & curtains provided",
+      },
+    ],
+
+    exteriorFeatures: [
+      {
+        feature: "Safety",
+        description: "24x7 CCTV & fire fighting systems",
+      },
+      {
+        feature: "Water",
+        description: "1000 Ltr water tank provision",
+      },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Lifestyle:",
+        text: "Elegance, comfort, and community interaction.",
+      },
+      {
+        label: "Location:",
+        text: "Prime spot on Nalasopara-Virar Link Road.",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Nalasopara-Virar Link Road", distance: "Direct Access" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Comfort Empire"
+      },
+      {
+        id: 2,
+        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=800&fit=crop",
+        alt: "Exterior View"
+      }
+    ],
+
+    additionalInfo: [
+      { label: "Contact:", text: "Maahi Gupta – 9580307685" },
+      { label: "Tagline:", text: "Your dream home awaits." },
+      { label: "Property Type:", text: "Residential Apartments" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "amit-palace-nalasopara-west",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Amit Palace",
+    address: "Next to Rahul International School, Patankar Road, Nallasopara (West)",
+    bhk: "2 BHK & Jodi Options",
+    builder: "Sai Siddhi Builders & Developers",
+    sqft: "433 – 547 Sq. Ft. Carpet Area",
+    price: "₹41 Lakh Onwards",
+    description:
+      "Amit Palace is your address of pride. A G+7 storey tower with commercial shops and residential jodi flats, offering modern amenities near the station.",
+    location: "for sale in Nallasopara West, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "G+7 Storey Residential Tower",
+      "Commercial Shops Available",
+      "Jodi Flats Option Available",
+      "Earthquake-Resistant Structure",
+      "VVCMC Approved Water Connection",
+      "Nearing Possession",
+    ],
+
+    apartmentSizes: [
+      { type: "2 BHK", area: "433-547 sq.ft. – ₹41 Lakh Onwards" },
+      { type: "Jodi Flats", area: "Available on Request" },
+    ],
+
+    amenities: [
+      { icon: "Utensils", text: "Modular Kitchen" },
+      { icon: "Car", text: "Open Parking" },
+      { icon: "Cctv", text: "CCTV Surveillance" },
+      { icon: "Home", text: "POP False Ceiling" },
+      { icon: "Droplets", text: "Branded Fittings" },
+    ],
+
+    interiorFeatures: [
+      {
+        feature: "Kitchen",
+        description: "Modular kitchen provided",
+      },
+      {
+        feature: "Ceiling",
+        description: "POP false ceiling",
+      },
+      {
+        feature: "Fittings",
+        description: "Branded sanitary & electrical fittings",
+      },
+    ],
+
+    exteriorFeatures: [
+      {
+        feature: "Structure",
+        description: "Earthquake-resistant structure",
+      },
+      {
+        feature: "Parking",
+        description: "Open parking space available",
+      },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Nearby:",
+        text: "Next to Rahul International School.",
+      },
+      {
+        label: "Connectivity:",
+        text: "500M from Station, Close to Link Road.",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Nallasopara Station", distance: "500 M" },
+      { amenity: "Rahul International School", distance: "Next Door" },
+      { amenity: "D-Mart", distance: "300 M" },
+      { amenity: "Vasai–Virar Link Road", distance: "Nearby" },
+      { amenity: "Hospitals", distance: "Nearby" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Amit Palace"
+      }
+    ],
+
+    additionalInfo: [
+      { label: "Status:", text: "Nearing Possession" },
+      { label: "Tower Height:", text: "G + 7 Storey" },
+      { label: "Configuration:", text: "Residential & Commercial" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "mukundan-astria-nalasopara-west",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Mukundan Astria",
+    address: "Patankar Park, Nalasopara (West), Maharashtra",
+    bhk: "1, 2 & 3 BHK",
+    builder: "Mukundan Group",
+    sqft: "Luxury Residences",
+    price: "On Request",
+    description:
+      "Step into luxury at Mukundan Astria. 1, 2 & 3 BHK residences nearing possession with grand amenities and valet parking, just 5 mins from the station.",
+    location: "for sale in Nalasopara West, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "1, 2 & 3 BHK Luxury Residences",
+      "Grand Lobby & Premium Amenities",
+      "200+ Car Parking Spaces with Valet",
+      "Nearing Possession",
+      "Designed for Comfort & Elegance",
+    ],
+
+    apartmentSizes: [
+      { type: "1, 2 & 3 BHK", area: "Luxury Configurations" },
+    ],
+
+    amenities: [
+      { icon: "Building2", text: "Grand Lobby" },
+      { icon: "Car", text: "200+ Car Parking & Valet" },
+      { icon: "Sparkles", text: "Premium Lifestyle Amenities" },
+    ],
+
+    interiorFeatures: [
+      {
+        feature: "Design",
+        description: "Designed for a lifestyle of comfort & elegance",
+      },
+    ],
+
+    exteriorFeatures: [
+      {
+        feature: "Parking",
+        description: "Valet facility with massive parking space",
+      },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Location:",
+        text: "Patankar Park, Nalasopara West.",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Nalasopara Station", distance: "5 mins" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Mukundan Astria"
+      }
+    ],
+
+    additionalInfo: [
+      { label: "Status:", text: "Nearing Possession" },
+      { label: "Parking:", text: "200+ Spaces" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "deep-emerald-nalasopara-west",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Deep Emerald",
+    address: "Opp. Prathamesh Complex, Chakradhar Nagar, Nalasopara (West) – 401203",
+    bhk: "1 & 2 BHK",
+    builder: "Deep Homes",
+    sqft: "416 – 636 Sq. Ft. Carpet Area",
+    price: "₹46.50 Lakh Onwards",
+    description:
+      "Deep Emerald offers elegant living in a G+7 storey building with rooftop amenities. Located in Chakradhar Nagar with everything within walking distance.",
+    location: "for sale in Nalasopara West, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "G+7 Floor Building",
+      "RERA Registered",
+      "Rooftop Amenities",
+      "Elegant Entrance Lobby",
+      "Luggage Elevators",
+    ],
+
+    apartmentSizes: [
+      { type: "1 BHK", area: "416 sq.ft. Carpet – ₹46.50 Lakh++" },
+      { type: "2 BHK", area: "636 sq.ft. Carpet – ₹77 Lakh++" },
+    ],
+
+    amenities: [
+      { icon: "Waves", text: "Kids Play Area" },
+      { icon: "Run", text: "Jogging Track" },
+      { icon: "Dumbbell", text: "Open Gym" },
+      { icon: "Utensils", text: "Modular Kitchen" },
+      { icon: "Car", text: "Open Parking" },
+      { icon: "Cctv", text: "CCTV Surveillance" },
+      { icon: "Palmtree", text: "Pergola Seating" },
+      { icon: "Home", text: "POP False Ceiling" },
+      { icon: "Flower2", text: "Flower Plantation" },
+      { icon: "Sprout", text: "Yoga Zone" },
+      { icon: "User", text: "Senior Citizen's Corner" },
+      { icon: "ArrowUp", text: "Luggage Elevators" },
+    ],
+
+    interiorFeatures: [
+      {
+        feature: "Kitchen",
+        description: "Modular kitchen provided",
+      },
+      {
+        feature: "Ceiling",
+        description: "POP false ceiling",
+      },
+    ],
+
+    exteriorFeatures: [
+      {
+        feature: "Lobby",
+        description: "Elegant entrance lobby",
+      },
+      {
+        feature: "Rooftop",
+        description: "Dedicated rooftop amenity zone",
+      },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Convenience:",
+        text: "Everything within walking distance.",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Nalasopara Station", distance: "5 mins" },
+      { amenity: "Hospital", distance: "2 mins" },
+      { amenity: "School & College", distance: "2 mins" },
+      { amenity: "Temple", distance: "2 mins" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Deep Emerald"
+      }
+    ],
+
+    additionalInfo: [
+      { label: "RERA Registered:", text: "Yes" },
+      { label: "Tower Height:", text: "G + 7 Floors" },
+      { label: "Builder Website:", text: "www.deephomes.co.in" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "aadiraj-signature-nalasopara",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Aadiraj Signature",
+    address: "Close to Nalasopara Railway Station, Palghar, Maharashtra",
+    bhk: "2, 3, 5 BHK & Penthouses",
+    builder: "Aadiraj Industries",
+    sqft: "592 – 963+ Sq. Ft. Carpet Area",
+    price: "₹65 Lakh Onwards",
+    description:
+      "A majestic G+22 storey tower by Aadiraj Industries offering a life of luxury and elegance. Spacious Vastu-compliant homes with podium-level amenities.",
+    location: "for sale in Nalasopara, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "Majestic G+22 Storey Tower",
+      "Vastu-Compliant Spacious Residences",
+      "All Master Bedrooms",
+      "Spacious Balconies with Views",
+      "Podium-Level Amenities",
+      "Jodi Flats & Penthouses Available",
+    ],
+
+    apartmentSizes: [
+      { type: "2 BHK", area: "592 sq.ft. – ₹65 Lakh++" },
+      { type: "3 BHK", area: "963 sq.ft. – ₹1.5 Cr++" },
+      { type: "Jodi/Penthouse", area: "Available" },
+    ],
+
+    amenities: [
+      { icon: "Leaf", text: "Multipurpose & Party Lawn" },
+      { icon: "Waves", text: "Children's Play Area" },
+      { icon: "Gamepad2", text: "Indoor Games" },
+      { icon: "Run", text: "Jogging Track" },
+      { icon: "Home", text: "Community Hall" },
+      { icon: "User", text: "Senior Citizens' Sit-Out" },
+      { icon: "Building2", text: "Podium-Level Amenities" },
+    ],
+
+    interiorFeatures: [
+      {
+        feature: "Bedrooms",
+        description: "All master bedrooms for added luxury",
+      },
+      {
+        feature: "Balconies",
+        description: "Spacious balconies to soak in the view",
+      },
+      {
+        feature: "Vastu",
+        description: "Vastu-compliant flats",
+      },
+    ],
+
+    exteriorFeatures: [
+      {
+        feature: "Tower Design",
+        description: "Majestic G+22 storey tower",
+      },
+      {
+        feature: "Land",
+        description: "Spacious 1 Acre land parcel",
+      },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Connectivity:",
+        text: "Seamless connected to Sopara Road & Station.",
+      },
+      {
+        label: "Convenience:",
+        text: "Banks, schools, malls & hospitals nearby.",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Nalasopara Railway Station", distance: "Close by" },
+      { amenity: "Sopara Road", distance: "Seamless Access" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Aadiraj Signature"
+      }
+    ],
+
+    additionalInfo: [
+      { label: "Configuration:", text: "2 BHK, 3 BHK, 5 BHK, Penthouses" },
+      { label: "Tower Height:", text: "G + 22 Storey" },
+      { label: "Land Parcel:", text: "1 Acre" },
+      { label: "Developer:", text: "Aadiraj Industries" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "prarthana-nalasopara",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Prarthana",
+    address: "Virar–Nallasopara Link Road, Palghar, Maharashtra",
+    bhk: "1 & 2 BHK",
+    builder: "Prarthana Developers",
+    sqft: "Spacious Modern Homes",
+    price: "On Request",
+    description:
+      "Live Peacefuly, Live Grandly. Prarthana offers a grand lifestyle with 24x7 surveillance, power backup, and excellent connectivity to schools and hospitals.",
+    location: "for sale in Virar–Nallasopara Link Road, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "Grand Entrance Gateway",
+      "Mechanical Parking System",
+      "Power Backup & Solar Energy",
+      "Meditation & Yoga Deck",
+      "Near St. Willibrord & Ryan International School",
+    ],
+
+    apartmentSizes: [
+      { type: "1 & 2 BHK", area: "Spacious Configurations" },
+    ],
+
+    amenities: [
+      { icon: "Building2", text: "Grand Entrance Gateway" },
+      { icon: "Cctv", text: "24x7 CCTV Surveillance" },
+      { icon: "Zap", text: "Power Backup & Solar Energy" },
+      { icon: "Sprout", text: "Meditation & Yoga Deck" },
+      { icon: "Waves", text: "Kids Play Area" },
+      { icon: "User", text: "Senior Citizen Seating" },
+      { icon: "Flame", text: "Fire Fighting System" },
+      { icon: "Car", text: "Mechanical Parking System" },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Education:",
+        text: "St. Willibrord, Narayana E-Techno, Ryan International nearby.",
+      },
+      {
+        label: "Healthcare:",
+        text: "Alliance, Tate, Star & VVCMC Hospitals nearby.",
+      },
+      {
+        label: "Shopping:",
+        text: "The Capital Mall, Star Bazaar, D-Mart nearby.",
+      },
+      {
+        label: "Spiritual:",
+        text: "Jivdani, Hanuman & Sai Baba Temples nearby.",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Nallasopara Railway Station", distance: "Accessible" },
+      { amenity: "Virar–Nallasopara Link Road", distance: "Direct Access" },
+      { amenity: "The Capital Mall", distance: "Nearby" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Prarthana"
+      },
+    ],
+
+    additionalInfo: [
+      { label: "MAHARERA No.:", text: "pm1240002500109" },
+      { label: "Sourcing Manager:", text: "Swapnil Kamble – 9371224129" },
+      { label: "Location Map:", text: "https://maps.app.goo.gl/hvXrScQSRLyTRK" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "umrale-varsha-nalasopara",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Umrale Varsha",
+    address: "Prime Location, Nalasopara, Maharashtra",
+    bhk: "1 & 2 BHK",
+    builder: "Umrale Developers",
+    sqft: "400 – 495 Sq. Ft. Carpet (1 BHK)",
+    price: "₹31.25 Lakh Onwards",
+    description:
+      "Where Your Dream Home Comes to Life. Umrale Varsha offers stylish 1 & 2 BHK homes with affordable luxury and seamless connectivity.",
+    location: "for sale in Nalasopara, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "Stylish 1 & 2 BHK Homes",
+      "Affordable Luxury in Prime Location",
+      "Excellent Connectivity",
+      "Thoughtful Layouts & Smart Space Use",
+      "Premium Quality Flooring",
+    ],
+
+    apartmentSizes: [
+      { type: "1 BHK", area: "400 sq.ft. – ₹31.25 Lakh Onwards" },
+      { type: "1 BHK", area: "410 sq.ft. – ₹32.00 Lakh Onwards" },
+      { type: "1 BHK", area: "455 sq.ft. – ₹35.25 Lakh Onwards" },
+      { type: "1 BHK", area: "495 sq.ft. – ₹38.50 Lakh Onwards" },
+    ],
+
+    amenities: [
+      { icon: "Wind", text: "Natural Ventilation" },
+      { icon: "Home", text: "Wide Balconies" },
+      { icon: "Sparkles", text: "Premium Flooring" },
+      { icon: "Droplets", text: "Modern Bathroom Fittings" },
+    ],
+
+    interiorFeatures: [
+      {
+        feature: "Layout",
+        description: "Thoughtful layouts for smart space use",
+      },
+      {
+        feature: "Light & Air",
+        description: "Wide balconies & large windows",
+      },
+      {
+        feature: "Flooring",
+        description: "Premium-quality flooring",
+      },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Connectivity:",
+        text: "Seamless living with public transport & highways nearby.",
+      },
+      {
+        label: "Lifestyle:",
+        text: "Close to schools, colleges, malls & hospitals.",
+      },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Umrale Varsha"
+      },
+    ],
+
+    additionalInfo: [
+      { label: "Contact:", text: "+91 7841851944" },
+      { label: "Status:", text: "Limited Inventory" },
+      { label: "Tagline:", text: "Your Address for a Better Tomorrow" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "rent-back-scheme-virar-nalasopara-2",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Exclusive Rent-Back Tower 2",
+    address: "Virar–Nalasopara Belt, Palghar, Maharashtra",
+    bhk: "1 & 2 BHK",
+    builder: "Rental Investment",
+    sqft: "Modern Layouts",
+    price: "On Request",
+    description:
+      "Experience Elevated Living with our Exclusive Rent-Back Scheme. A 23-storey modern tower in a well-established Hindu society offering unmatched value.",
+    location: "for sale in Virar–Nalasopara, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "Rent-Back Scheme: Earn Rent Until Possession",
+      "No EMI Till Fit-Out",
+      "10/90 Subvention Plan",
+      "23-Storey Modern Residential Tower",
+      "Located in Established Hindu Society",
+    ],
+
+    investmentBenefits: [
+      {
+        title: "Rent-Back Scheme",
+        description: "Your home pays you rent until possession.",
+      },
+      {
+        title: "No EMI Till Fit-Out",
+        description: "Financial ease during construction.",
+      },
+    ],
+
+    amenities: [
+      { icon: "Sprout", text: "Rooftop Yoga Deck" },
+      { icon: "Run", text: "Jogging Track" },
+      { icon: "Sun", text: "Open-Air Lounge" },
+      { icon: "Building2", text: "Rooftop Amenities" },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Location:",
+        text: "Growing Virar–Nalasopara belt.",
+      },
+      {
+        label: "Community:",
+        text: "Peaceful neighborhood in established society.",
+      },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Rent-Back Tower"
+      },
+    ],
+
+    additionalInfo: [
+      { label: "Scheme:", text: "Rent-Back Scheme" },
+      { label: "Payment Plan:", text: "10/90 Subvention" },
+      { label: "Tower Height:", text: "23 Storeys" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "golden-paradise-nalasopara",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Golden Paradise",
+    address: "Off Nallasopara Station, Palghar, Maharashtra",
+    bhk: "1 & 2 BHK",
+    builder: "Golden Paradise Developers",
+    sqft: "Efficient 1 & 2 BHK",
+    price: "₹29.75 Lakh Onwards",
+    description:
+      "Golden Paradise – Your Dream Home Awaits! Just 10 mins from Nallasopara Station, offering modern amenities including rooftop kids play area.",
+    location: "for sale in Nallasopara, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "Just 10 mins from Nallasopara Station",
+      "Schools, Hospitals & Temples nearby",
+      "Nearing Possession",
+      "Book with just ₹3 Lakhs",
+      "MahaRERA Registered",
+    ],
+
+    apartmentSizes: [
+      { type: "1 & 2 BHK", area: "Starting from ₹29.75 Lakhs" },
+    ],
+
+    amenities: [
+      { icon: "Waves", text: "Rooftop Kids Play Area" },
+      { icon: "TreePine", text: "Gardens" },
+      { icon: "User", text: "Senior Citizen Zone" },
+      { icon: "Cctv", text: "24x7 CCTV" },
+    ],
+
+    locationHighlights: [
+      { amenity: "Nallasopara Station", distance: "10 mins" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Golden Paradise"
+      },
+    ],
+
+    additionalInfo: [
+      { label: "MahaRERA:", text: "P99000077579" },
+      { label: "Booking Amount:", text: "₹3 Lakhs" },
+      { label: "Status:", text: "Nearing Possession" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "saptashrungi-heights-nalasopara",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Saptashrungi Heights",
+    address: "Prime Location, Nalasopara, Maharashtra",
+    bhk: "1 & 2 BHK",
+    builder: "Saptashrungi Builders",
+    sqft: "415 – 767 Sq. Ft. Carpet Area",
+    price: "₹42 Lakh Onwards",
+    description:
+      "Welcome to Saptashrungi Heights, a G+7 premium luxurious project with 50+ personalized amenities, grand clubhouse, and EV charging station.",
+    location: "for sale in Nalasopara, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "G+7 Floor Premium Project",
+      "50+ Personalized & Common Amenities",
+      "RERA Approved & CC Received",
+      "Grand Clubhouse & Giant Game Zone",
+      "E-V Charging Station",
+    ],
+
+    apartmentSizes: [
+      { type: "1 BHK", area: "415 - 438 sq.ft. – ₹42 Lacs*" },
+      { type: "2 BHK", area: "552 - 767 sq.ft. – ₹56 Lacs*" },
+    ],
+
+    amenities: [
+      { icon: "User", text: "Senior Citizen Corner" },
+      { icon: "Gamepad2", text: "Giant Game Zone" },
+      { icon: "Run", text: "Jogging Track" },
+      { icon: "Star", text: "Star Gazing Point" },
+      { icon: "Flame", text: "BBQ Corner" },
+      { icon: "Sprout", text: "Yoga & Meditation Zone" },
+      { icon: "Building2", text: "Grand Clubhouse" },
+      { icon: "BatteryCharging", text: "E-V Charging Station" },
+      { icon: "Dumbbell", text: "Fully Equipped Gym" },
+      { icon: "Droplets", text: "24/7 VVMC Water Supply" },
+      { icon: "ArrowUp", text: "8 Automatic Elevators" },
+    ],
+
+    exteriorFeatures: [
+      {
+        feature: "Tower",
+        description: "G+7 Floor Building",
+      },
+      {
+        feature: "Amenities",
+        description: "Gazebo & Community Area",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Temple, Garden, Hospital, School", distance: "Nearby" },
+      { amenity: "D-Mart", distance: "Nearby" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Saptashrungi Heights"
+      },
+    ],
+
+    additionalInfo: [
+      { label: "Approvals:", text: "RERA Approved, CC Received" },
+      { label: "Water Supply:", text: "VVMC Water Supply" },
+      { label: "Elevators:", text: "8 Automatic Elevators" },
+    ],
+  }
+  ,
+  //---------------------------------------------------------------------------------//
+  {
+    id: "romal-kirti-nalasopara",
+    image:
+      "https://i.postimg.cc/wv4RkQW3/image.png",
+    title: "Romal Kirti",
+    address: "Close to Station, Nalasopara, Maharashtra",
+    bhk: "Spacious Flats",
+    builder: "Romal Kirti Developers",
+    sqft: "Spacious Layouts",
+    price: "Attractive Plans",
+    description:
+      "Romal Kirti offers 12-storey luxury living close to the station with spacious flats, podium garden, and attractive payment plans.",
+    location: "for sale in Nalasopara, Maharashtra",
+    type: "sale",
+
+    projectHighlights: [
+      "12 Storey Luxury Living",
+      "Close to Station",
+      "Podium Garden",
+      "Stamp Duty/Registration/GST Free",
+      "No Pre-EMI Till Fit Outs",
+    ],
+
+    amenities: [
+      { icon: "TreePine", text: "Podium Garden" },
+      { icon: "Building2", text: "Lifestyle Amenities" },
+    ],
+
+    neighborhoodDetails: [
+      {
+        label: "Convenience:",
+        text: "Close to all brands & daily requirements.",
+      },
+    ],
+
+    locationHighlights: [
+      { amenity: "Railway Station", distance: "Close by" },
+    ],
+
+    images: [
+      {
+        id: 1,
+        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        alt: "Romal Kirti"
+      },
+    ],
+
+    additionalInfo: [
+      { label: "Offers:", text: "Stamp Duty/Reg/GST Free" },
+      { label: "Payment Plan:", text: "No Pre-EMI Till Fit Outs" },
+      { label: "Contact:", text: "8767324977" },
+    ],
+  }
 ];
 
 export default properties;

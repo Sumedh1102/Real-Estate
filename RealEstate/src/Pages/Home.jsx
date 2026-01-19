@@ -18,7 +18,7 @@ const Home = () => {
           <Parallex />
         </div>
         <div id="properties">
-          <PropertyComponent />
+          <PropertyComponent limit={4} />
         </div>
         <div id="services">
           <Services />

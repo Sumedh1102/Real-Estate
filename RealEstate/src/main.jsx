@@ -4,7 +4,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import Home from "./Pages/Home.jsx";
 import PropertyDetails from "./Pages/PropertyDetails.jsx";
+import AdminDashboard from "./Pages/AdminDashboard.jsx";
+import AllProperties from "./Pages/AllProperties.jsx";
 import Demo from "./Pages/Demo.jsx";
+import { PropertyProvider } from "./Context/PropertyContext.jsx";
 
 import "./index.css";
 
@@ -20,6 +23,14 @@ const router = createBrowserRouter([
       {
         path: "property/:id",
         element: <PropertyDetails />
+      },
+      {
+        path: "admin",
+        element: <AdminDashboard />
+      },
+      {
+        path: "properties",
+        element: <AllProperties />
       }
     ]
   },
@@ -33,6 +44,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <PropertyProvider>
+      <RouterProvider router={router} />
+    </PropertyProvider>
   </StrictMode>
 );
