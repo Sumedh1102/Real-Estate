@@ -8,7 +8,7 @@ export const useProperties = () => useContext(PropertyContext);
 export const PropertyProvider = ({ children }) => {
     const [properties, setProperties] = useState(() => {
         // 1. Try to get data from LocalStorage
-        const savedProperties = localStorage.getItem('siteProperties');
+        const savedProperties = localStorage.getItem('siteProperties_v4');
 
         if (savedProperties) {
             return JSON.parse(savedProperties);
@@ -20,7 +20,7 @@ export const PropertyProvider = ({ children }) => {
 
     // Sync with LocalStorage whenever properties change
     useEffect(() => {
-        localStorage.setItem('siteProperties', JSON.stringify(properties));
+        localStorage.setItem('siteProperties_v4', JSON.stringify(properties));
     }, [properties]);
 
     const addProperty = (newProperty) => {

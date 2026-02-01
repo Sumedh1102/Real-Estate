@@ -1,150 +1,5 @@
 const properties = [
-  {
-    id: "sai-abhudaya-grande-nalasopara-w",
-    image:
-      "https://i.pinimg.com/736x/2f/91/f1/2f91f17da797fd060f516407695987cf.jpg",
-    title: "Sai Abhudaya GRANDE",
-    address: "Nalasopara (West), Palghar, Maharashtra",
-    bhk: "2 BHK",
-    builder: "Prem",
-    sqft: "Premium Carpet Area",
-    price: "On Request",
-    description:
-      "A premium lifestyle residential project offering elegance, comfort, and luxury in the heart of Nalasopara (W).",
-    location: "for sale in Nalasopara West, Maharashtra",
-    type: "sale",
 
-    amenities: [
-      { icon: "Building2", text: "Elite Club House" },
-      { icon: "Droplets", text: "Plunge Pool" },
-      { icon: "Activity", text: "Multi-Purpose Court" },
-      { icon: "Waves", text: "EPDM Kids Play Area" },
-      { icon: "Home", text: "Grand Entrance Lobby" },
-      { icon: "Dumbbell", text: "Fitness Center & Gymnasium" },
-      { icon: "Flower2", text: "Amphitheatre" },
-      { icon: "Sprout", text: "Yoga & Meditation Zone" },
-      { icon: "Gamepad2", text: "Board Games Area" },
-      { icon: "Palmtree", text: "Pergola & Swing Sitting" },
-      { icon: "Flame", text: "Barbeque Area" },
-      { icon: "PartyPopper", text: "Party Area" },
-      { icon: "Eye", text: "Sky Gazing Point" },
-    ],
-
-    interiorFeatures: [
-      {
-        feature: "Living Room",
-        description: "Well-planned layout with ample ventilation & light",
-      },
-      {
-        feature: "Kitchen",
-        description: "Modern kitchen with granite platform & modular provision",
-      },
-      {
-        feature: "Bedrooms",
-        description: "Comfortable bedrooms with smart space utilization",
-      },
-      {
-        feature: "Bathrooms",
-        description: "Premium fittings with anti-skid flooring",
-      },
-      {
-        feature: "Flooring",
-        description: "Vitrified tile flooring across the apartment",
-      },
-      {
-        feature: "Electrical",
-        description: "Concealed wiring with branded switches",
-      },
-      {
-        feature: "Doors",
-        description: "Decorative main door with quality safety fittings",
-      },
-    ],
-
-    exteriorFeatures: [
-      {
-        feature: "Elevation",
-        description: "Contemporary elevation with premium finish",
-      },
-      {
-        feature: "Open Spaces",
-        description: "Landscaped areas for leisure & relaxation",
-      },
-      {
-        feature: "Lighting",
-        description: "Energy-efficient lighting in common areas",
-      },
-      {
-        feature: "Safety",
-        description: "Fire fighting system & secured premises",
-      },
-    ],
-
-    neighborhoodDetails: [
-      {
-        label: "Lifestyle:",
-        text: "Luxury-focused, peaceful & family-friendly environment.",
-      },
-      {
-        label: "Community:",
-        text: "Modern residential community with premium amenities.",
-      },
-      {
-        label: "Nearby Areas:",
-        text: "Schools, colleges, hospitals & shopping hubs nearby.",
-      },
-      {
-        label: "Connectivity:",
-        text: "Excellent road & railway connectivity.",
-      },
-      {
-        label: "Daily Needs:",
-        text: "Markets, banks & essentials within easy reach.",
-      },
-    ],
-
-    locationHighlights: [
-      { amenity: "Nalasopara Railway Station", distance: "5 mins" },
-      { amenity: "Schools & Colleges", distance: "5–10 mins" },
-      { amenity: "Hospitals", distance: "10 mins" },
-      { amenity: "Shopping Markets", distance: "5 mins" },
-      { amenity: "Major Road Connectivity", distance: "15 mins" },
-    ],
-
-    images: [
-      {
-        id: 1,
-        url: "https://i.pinimg.com/736x/2f/91/f1/2f91f17da797fd060f516407695987cf.jpg",
-        alt: "Sai Abhudaya GRANDE"
-      },
-      {
-        id: 2,
-        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=800&fit=crop",
-        alt: "Contemporary home with landscaping"
-      },
-      {
-        id: 3,
-        url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&h=600&fit=crop",
-        alt: "Architectural detail facade"
-      },
-      {
-        id: 4,
-        url: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=600&fit=crop",
-        alt: "Modern home exterior angle"
-      }
-    ],
-
-    additionalInfo: [
-      { label: "Project Status:", text: "OC Approved (VVMC)" },
-      { label: "Property Type:", text: "Residential Apartments" },
-      { label: "Ownership:", text: "Freehold Property" },
-      { label: "Water Supply:", text: "Municipal Corporation" },
-      { label: "Electricity:", text: "Individual Metered Supply" },
-      { label: "Developer Contact:", text: "Prem – 93079 92513" },
-    ],
-  }
-  ,
-  //---------------------------------------------------------------------------------//
   {
     id: "dhananjay-hill-view-nalasopara",
     image:
@@ -1143,7 +998,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/rFsp255w/Screenshot-2026-01-12-at-7-03-16-PM.png",
+        url: "https://i.postimg.cc/6pZY7w2B/Chat-GPT-Image-Feb-1-2026-05-44-00-PM.png",
         alt: "Elite Tower"
       },
       {
@@ -1176,7 +1031,7 @@ const properties = [
   {
     id: "comfort-empire-nalasopara-virar",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png", // Using placeholder/generic
+      "https://i.postimg.cc/02YfGvdz/Chat-GPT-Image-Feb-1-2026-07-32-41-PM.png", // Using placeholder/generic
     title: "Comfort Empire",
     address: "Nalasopara-Virar Link Road, Palghar, Maharashtra",
     bhk: "1 & 2 BHK",
@@ -1263,7 +1118,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        url: "https://i.postimg.cc/02YfGvdz/Chat-GPT-Image-Feb-1-2026-07-32-41-PM.png",
         alt: "Comfort Empire"
       },
       {
@@ -1366,7 +1221,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        url: "https://i.postimg.cc/brXQfSgp/Chat-GPT-Image-Feb-1-2026-05-47-40-PM.png",
         alt: "Amit Palace"
       }
     ],
@@ -1440,7 +1295,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        url: "https://i.postimg.cc/gJbJYVC5/Chat-GPT-Image-Feb-1-2026-05-50-48-PM.png",
         alt: "Mukundan Astria"
       }
     ],
@@ -1518,7 +1373,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        url: "https://i.postimg.cc/85cyzvLR/Chat-GPT-Image-Feb-1-2026-05-55-45-PM.png",
         alt: "Prarthana"
       },
     ],
@@ -1597,7 +1452,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        url: "https://i.postimg.cc/zX70KppK/Chat-GPT-Image-Feb-1-2026-06-00-10-PM.png",
         alt: "Umrale Varsha"
       },
     ],
@@ -1651,7 +1506,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        url: "https://i.postimg.cc/Kz42hRzC/Chat-GPT-Image-Feb-1-2026-06-06-17-PM.png",
         alt: "Golden Paradise"
       },
     ],
@@ -1725,7 +1580,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        url: "https://i.postimg.cc/zv54XvXm/Chat-GPT-Image-Feb-1-2026-06-11-31-PM.png",
         alt: "Saptashrungi Heights"
       },
     ],
@@ -1780,7 +1635,7 @@ const properties = [
     images: [
       {
         id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
+        url: "https://i.postimg.cc/m2KNQqCb/Chat-GPT-Image-Feb-1-2026-06-14-44-PM.png",
         alt: "Romal Kirti"
       },
     ],

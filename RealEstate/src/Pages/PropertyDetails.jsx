@@ -18,7 +18,6 @@ const PropertyDetails = () => {
   return (
     <div className="min-h-screen">
       <Hero property={property} />
-      <Gallery property={property} />
       <Info property={property} />
       <Info2 property={property} />
     </div>

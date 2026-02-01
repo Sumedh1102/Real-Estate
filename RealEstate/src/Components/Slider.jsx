@@ -116,7 +116,6 @@ const TestimonialsCarousel = () => {
         <p className="text-sm text-gray-700 leading-relaxed">{testimonial.body}</p>
       </div>
       <div className="flex items-center gap-3">
-        <img src={testimonial.avatar} alt={testimonial.name} className="w-12 h-12 rounded-lg" />
         <div>
           <p className="font-medium">{testimonial.name}</p>
           <p className="text-xs text-gray-600">{testimonial.location}</p>
@@ -131,7 +130,7 @@ const TestimonialsCarousel = () => {
         <div className="border-t border-black/10 mb-8"></div>
         <h2 className="text-3xl md:text-4xl lg:text-[48px] font-medium text-black mb-10">
           What our clients say
-          <br />—real experiences, real trust
+          <br />real experiences, real trust
         </h2>
 
         <div ref={containerRef} className="flex gap-6 overflow-x-auto scrollbar-hide">

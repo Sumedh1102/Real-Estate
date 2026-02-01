@@ -8,6 +8,8 @@ const FAQSection = () => {
     email: '',
     message: ''
   });
+
+  const [result, setResult] = useState('');
   const [openFaq, setOpenFaq] = useState(null);
 
   const faqs = [
@@ -58,21 +60,46 @@ const FAQSection = () => {
     }
   ];
 
-  const handleSubmit = () => {
-    if (!formData.name || !formData.phone || !formData.email || !formData.message) {
-      alert('Please fill in all fields');
-      return;
-    }
-    console.log('Form submitted:', formData);
-    alert("Thank you for reaching out! Our team will contact you shortly.");
-    setFormData({ name: '', phone: '', email: '', message: '' });
-  };
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleSubmit = async () => {
+    if (!formData.name || !formData.phone || !formData.email || !formData.message) {
+      alert('Please fill in all fields');
+      return;
+    }
+
+    setResult('Sending...');
+
+    const data = new FormData();
+    data.append('access_key', 'ece892b2-6349-43b0-9a7d-ebba06392780');
+
+    Object.entries(formData).forEach(([key, value]) =>
+      data.append(key, value)
+    );
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: data
+      });
+
+      const resData = await response.json();
+
+      if (resData.success) {
+        setResult('Message sent successfully!');
+        setFormData({ name: '', phone: '', email: '', message: '' });
+      } else {
+        setResult('Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error(error);
+      setResult('Error submitting form. Please try again.');
+    }
   };
 
   const toggleFaq = (index) => {
@@ -82,48 +109,35 @@ const FAQSection = () => {
   return (
     <div className="min-h-screen pb-10 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F5F1E9' }}>
       <div className="max-w-[1400px] mx-auto">
+
         {/* Header */}
-        <div className="border-t border-black/10 mb-6 sm:mb-8"></div>
-        
-        <div className="mb-8 sm:mb-10 md:mb-12">
-          <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
-            {/* Label */}
-            <div className="flex items-center gap-2 sm:pt-1">
-              <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-sm bg-[#1a1a1a]" />
-              <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-[#1a1a1a] font-medium">
-                FAQs
-              </span>
-            </div>
-            
-            {/* Heading */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-0 xl:translate-x-40">
-              Answers to common property questions
-              <br className="hidden sm:block" />
-              <span className="sm:hidden"> </span>—clear, honest, and helpful
-            </h2>
-          </div>
+        <div className="border-t border-black/10 mb-8"></div>
+
+        <div className="mb-12">
+          <h2 className="text-3xl md:text-4xl font-medium text-[#1a1a1a]">
+            Answers to common property questions — clear, honest, and helpful
+          </h2>
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid gap-8 lg:gap-12 items-start lg:grid-cols-[40%_58%] xl:grid-cols-[37%_60%]">
-          {/* Left Column - Contact Form */}
-          <div className="lg:sticky lg:top-24 w-full">
-            <div className="rounded-xl p-6 sm:p-8 lg:p-10 shadow-sm" style={{ backgroundColor: '#FAF8F0' }}>
-              <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 leading-relaxed">
-                Have a property-related question?<br className="hidden sm:block" />
-                <span className="sm:hidden"> </span>Our experts are just a message away.
+        <div className="grid gap-12 lg:grid-cols-[40%_58%]">
+
+          {/* Left: Contact Form */}
+          <div className="lg:sticky lg:top-24">
+            <div className="rounded-xl p-8 shadow-sm" style={{ backgroundColor: '#FAF8F0' }}>
+              <p className="text-lg mb-6">
+                Have a property-related question? Our experts are just a message away.
               </p>
 
               <div className="space-y-5">
-                {/* Name and Phone */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                   <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name"
-                    className="w-full px-4 py-3 rounded-xl border-0 focus:ring-2 focus:ring-black outline-none"
+                    className="px-4 py-3 rounded-xl focus:ring-2 focus:ring-black outline-none"
                     style={{ backgroundColor: '#F0EDE5' }}
                   />
                   <input
@@ -132,7 +146,7 @@ const FAQSection = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Your Phone Number"
-                    className="w-full px-4 py-3 rounded-xl border-0 focus:ring-2 focus:ring-black outline-none"
+                    className="px-4 py-3 rounded-xl focus:ring-2 focus:ring-black outline-none"
                     style={{ backgroundColor: '#F0EDE5' }}
                   />
                 </div>
@@ -143,7 +157,7 @@ const FAQSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Your Email Address"
-                  className="w-full px-4 py-3 rounded-xl border-0 focus:ring-2 focus:ring-black outline-none"
+                  className="w-full px-4 py-3 rounded-xl focus:ring-2 focus:ring-black outline-none"
                   style={{ backgroundColor: '#F0EDE5' }}
                 />
 
@@ -153,47 +167,56 @@ const FAQSection = () => {
                   onChange={handleChange}
                   placeholder="Tell us what you're looking for..."
                   rows="4"
-                  className="w-full px-4 py-3 rounded-xl border-0 focus:ring-2 focus:ring-black outline-none resize-none"
+                  className="w-full px-4 py-3 rounded-xl focus:ring-2 focus:ring-black outline-none resize-none"
                   style={{ backgroundColor: '#F0EDE5' }}
                 />
 
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-black text-white py-3.5 sm:py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:scale-[1.02] transition-all text-sm sm:text-base"
+                  className="w-full bg-black text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:scale-[1.02] transition"
                 >
                   SEND MESSAGE
-                  <ChevronRight size={20} className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <ChevronRight size={18} />
                 </button>
+
+                {result && (
+                  <p className="text-center text-sm text-gray-700 mt-2">
+                    {result}
+                  </p>
+                )}
               </div>
             </div>
           </div>
 
-          {/* Right Column - FAQ Accordion */}
-          <div className="space-y-0 w-full">
+          {/* Right: FAQ Accordion */}
+          <div>
             {faqs.map((faq, index) => (
               <div key={index} className="border-b border-gray-300">
                 <button
                   onClick={() => toggleFaq(index)}
-                  className="w-full py-5 sm:py-6 flex items-start gap-3 sm:gap-4 text-left px-2 sm:px-4 -mx-2 sm:-mx-4 rounded-lg hover:bg-black/5 transition-colors"
+                  className="w-full py-6 flex gap-4 text-left hover:bg-black/5 px-4 rounded-lg"
                 >
-                  <div className={`w-8 h-8 sm:w-9 sm:h-9 pb-1 rounded-full border border-slate-400 flex items-center justify-center flex-shrink-0 transition-transform ${openFaq === index ? 'rotate-45' : ''}`}>
-                    <span className="text-black text-xl sm:text-2xl font-thin">+</span>
+                  <div
+                    className={`w-9 h-9 rounded-full border flex items-center justify-center transition-transform ${
+                      openFaq === index ? 'rotate-45' : ''
+                    }`}
+                  >
+                    +
                   </div>
-                  <span className="text-base sm:text-lg lg:text-xl font-medium flex-1 pt-1">
-                    {faq.question}
-                  </span>
+                  <span className="text-lg font-medium">{faq.question}</span>
                 </button>
 
-                <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                  <div className="pb-5 sm:pb-6 pl-11 sm:pl-14 pr-2 sm:pr-4">
-                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
+                <div
+                  className={`transition-all overflow-hidden ${
+                    openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <p className="px-14 pb-6 text-gray-600">{faq.answer}</p>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </div>

@@ -99,18 +99,6 @@ const BlogsSection = () => {
               <h3 className="text-lg font-medium mb-5 text-gray-900 line-clamp-2 w-80">
                 {blog.title}
               </h3>
-
-              {/* Author Badge */}
-              <div className="flex items-center gap-2">
-                <img 
-                  src={blog.authorAvatar}
-                  alt={blog.author}
-                  className="w-5 h-5 rounded-md bg-black"
-                />
-                <span className="text-xs font-medium text-gray-700 uppercase">
-                  {blog.author}
-                </span>
-              </div>
             </div>
           ))}
         </div>
