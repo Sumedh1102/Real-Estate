@@ -148,7 +148,7 @@ const properties = [
   {
     id: "dhananjay-hill-view-nalasopara",
     image:
-      "https://i.postimg.cc/Vv57v5Cq/Chat-GPT-Image-Jan-11-2026-11-11-25-AM.png",
+      "https://i.postimg.cc/xdKT8kyy/Chat-GPT-Image-Feb-1-2026-05-29-16-PM.png",
     title: "Dhananjay Hill View",
     address: "Nalasopara (West), Palghar, Maharashtra",
     bhk: "1, 2 & 3 BHK",
@@ -299,7 +299,7 @@ const properties = [
   {
     id: "mk-proud-nalasopara-west",
     image:
-      "https://i.postimg.cc/KjL0Bw0M/image.png",
+      "https://i.postimg.cc/Qt16RDDp/Chat-GPT-Image-Feb-1-2026-05-33-43-PM.png",
     title: "MK PROUD",
     address:
       "Survey No. 187, Opp. Rahul International School, Shreeparashtha, Virar–Nalasopara Link Road, Nalasopara (West)",
@@ -464,7 +464,7 @@ const properties = [
   {
     id: "dhananjay-residency-nalasopara-west",
     image:
-      "https://i.postimg.cc/PfLCjZ3z/image.png",
+      "https://i.postimg.cc/GhqM0zWy/Chat-GPT-Image-Feb-1-2026-05-34-25-PM.png",
     title: "Dhananjay Residency",
     address: "Near Nalasopara West Railway Station, Palghar, Maharashtra",
     bhk: "1, 2 & 3 BHK",
@@ -603,7 +603,7 @@ const properties = [
   {
     id: "elite-tower-virar-nalasopara-link-road",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/TwM0jsbw/Chat-GPT-Image-Feb-1-2026-05-34-57-PM.png",
     title: "Elite Tower",
     address: "Virar–Nalasopara Link Road, Palghar, Maharashtra",
     bhk: "1 BHK & 2 BHK",
@@ -751,171 +751,9 @@ const properties = [
   ,
   //---------------------------------------------------------------------------------//
   {
-    id: "rent-back-scheme-virar-nalasopara",
-    image:
-      "https://i.pinimg.com/736x/2f/91/f1/2f91f17da797fd060f516407695987cf.jpg",
-    title: "Exclusive Rent-Back Residential Tower",
-    address: "Virar–Nalasopara Belt, Palghar, Maharashtra",
-    bhk: "1 & 2 BHK",
-    builder: "Rental Investment",
-    sqft: "Efficiently Planned Carpet Areas",
-    price: "On Request",
-    description:
-      "A 23-storey modern residential tower offering a smart rent-back investment scheme, rooftop lifestyle amenities, and flexible payment plans in the fast-growing Virar–Nalasopara region.",
-    location: "for sale in Virar–Nalasopara, Maharashtra",
-    type: "sale",
-
-    projectHighlights: [
-      "23-Storey Modern Residential Tower",
-      "Located in a Well-Established Hindu Society",
-      "Ideal for End-Users & Smart Investors",
-      "High Appreciation Potential Location",
-      "Peaceful Neighborhood with Strong Connectivity",
-    ],
-
-    investmentBenefits: [
-      {
-        title: "Rent-Back Scheme",
-        description: "Your home pays you rent until possession.",
-      },
-      {
-        title: "No EMI Till Fit-Out",
-        description: "Complete financial ease during construction period.",
-      },
-      {
-        title: "10/90 Subvention Plan",
-        description:
-          "Pay only 10% at booking and remaining 90% on possession.",
-      },
-    ],
-
-    paymentPlans: [
-      "Rent-Back Scheme",
-      "No EMI Till Fit-Out",
-      "10/90 Subvention Payment Plan",
-    ],
-
-    amenities: [
-      { icon: "Sparkles", text: "Rooftop Lifestyle Amenities" },
-      { icon: "Sun", text: "Open-Air Lounge" },
-      { icon: "Sprout", text: "Rooftop Yoga Deck" },
-      { icon: "Run", text: "Jogging Track" },
-      { icon: "Home", text: "Rooftop Seating Areas" },
-      { icon: "Building2", text: "Modern Entrance Lobby" },
-      { icon: "Shield", text: "Secure Gated Community" },
-      { icon: "Leaf", text: "Peaceful Green Surroundings" },
-    ],
-
-    interiorFeatures: [
-      {
-        feature: "Layout",
-        description: "Smart layouts designed for comfort & usability",
-      },
-      {
-        feature: "Living Area",
-        description: "Well-ventilated living spaces with natural light",
-      },
-      {
-        feature: "Kitchen",
-        description: "Modern kitchen with granite platform provision",
-      },
-      {
-        feature: "Bedrooms",
-        description: "Comfort-oriented bedrooms with privacy focus",
-      },
-      {
-        feature: "Bathrooms",
-        description: "Quality sanitary fittings with anti-skid flooring",
-      },
-      {
-        feature: "Flooring",
-        description: "Vitrified tile flooring across apartments",
-      },
-    ],
-
-    exteriorFeatures: [
-      {
-        feature: "Tower Design",
-        description: "Contemporary high-rise elevation",
-      },
-      {
-        feature: "Rooftop Spaces",
-        description: "Sky-level amenities for leisure & wellness",
-      },
-      {
-        feature: "Safety",
-        description: "Fire safety systems & controlled access",
-      },
-      {
-        feature: "Common Areas",
-        description: "Well-lit lobbies & common passages",
-      },
-    ],
-
-    neighborhoodDetails: [
-      {
-        label: "Location Advantage:",
-        text: "Prime location in the fast-developing Virar–Nalasopara belt.",
-      },
-      {
-        label: "Connectivity:",
-        text: "Excellent road & rail connectivity to Mumbai suburbs.",
-      },
-      {
-        label: "Lifestyle:",
-        text: "Peaceful residential environment with modern comforts.",
-      },
-      {
-        label: "Investment Scope:",
-        text: "High rental demand and strong future appreciation.",
-      },
-    ],
-
-    locationHighlights: [
-      { amenity: "Virar–Nalasopara Region", distance: "Central Location" },
-      { amenity: "Railway Connectivity", distance: "10–15 mins" },
-      { amenity: "Schools & Colleges", distance: "Nearby" },
-      { amenity: "Hospitals", distance: "10 mins" },
-      { amenity: "Markets & Daily Needs", distance: "5 mins" },
-    ],
-
-    images: [
-      {
-        id: 1,
-        url: "https://i.pinimg.com/736x/2f/91/f1/2f91f17da797fd060f516407695987cf.jpg",
-        alt: "Exclusive Rent-Back Residential Tower"
-      },
-      {
-        id: 2,
-        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=800&fit=crop",
-        alt: "Contemporary home with landscaping"
-      },
-      {
-        id: 3,
-        url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&h=600&fit=crop",
-        alt: "Architectural detail facade"
-      },
-      {
-        id: 4,
-        url: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=600&fit=crop",
-        alt: "Modern home exterior angle"
-      }
-    ],
-
-    additionalInfo: [
-      { label: "Scheme Type:", text: "Rent-Back Investment Scheme" },
-      { label: "Payment Plan:", text: "10/90 Subvention" },
-      { label: "Tower Height:", text: "23 Storeys" },
-      { label: "Property Type:", text: "Residential Apartments" },
-      { label: "Ideal For:", text: "Investors & End-Users" },
-    ],
-  }
-  ,
-  //---------------------------------------------------------------------------------//
-  {
     id: "av-aashirwad-nalasopara-west",
     image:
-      "https://i.postimg.cc/zvMd4Wfp/image.png",
+      "https://i.postimg.cc/vmWfyZ4p/Chat-GPT-Image-Feb-1-2026-05-36-02-PM.png",
     title: "AV Aashirwad",
     address: "Shreeprastha Road, Nalasopara (West), Palghar, Maharashtra",
     bhk: "1 & 2 BHK",
@@ -1051,7 +889,7 @@ const properties = [
   {
     id: "comfort-heritage-nalasopara-west",
     image:
-      "https://i.postimg.cc/SxGPxn1m/image.png",
+      "https://i.postimg.cc/1zjtLxBV/Chat-GPT-Image-Feb-1-2026-05-39-41-PM.png",
     title: "Comfort Heritage",
     address: "Nallasopara–Virar Link Road, Nalasopara (West), Palghar, Maharashtra",
     bhk: "1, 2 & 3 BHK",
@@ -1199,7 +1037,7 @@ const properties = [
   {
     id: "elite-tower-virar-nalasopara-link-road-2",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/6pZY7w2B/Chat-GPT-Image-Feb-1-2026-05-44-00-PM.png",
     title: "Elite Tower",
     address: "Virar-Nallasopara Link Road, Palghar, Maharashtra",
     bhk: "1 BHK, Smart 2 BHK & Luxury 2 BHK",
@@ -1446,7 +1284,7 @@ const properties = [
   {
     id: "amit-palace-nalasopara-west",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/brXQfSgp/Chat-GPT-Image-Feb-1-2026-05-47-40-PM.png",
     title: "Amit Palace",
     address: "Next to Rahul International School, Patankar Road, Nallasopara (West)",
     bhk: "2 BHK & Jodi Options",
@@ -1544,7 +1382,7 @@ const properties = [
   {
     id: "mukundan-astria-nalasopara-west",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/gJbJYVC5/Chat-GPT-Image-Feb-1-2026-05-50-48-PM.png",
     title: "Mukundan Astria",
     address: "Patankar Park, Nalasopara (West), Maharashtra",
     bhk: "1, 2 & 3 BHK",
@@ -1615,203 +1453,9 @@ const properties = [
   ,
   //---------------------------------------------------------------------------------//
   {
-    id: "deep-emerald-nalasopara-west",
-    image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
-    title: "Deep Emerald",
-    address: "Opp. Prathamesh Complex, Chakradhar Nagar, Nalasopara (West) – 401203",
-    bhk: "1 & 2 BHK",
-    builder: "Deep Homes",
-    sqft: "416 – 636 Sq. Ft. Carpet Area",
-    price: "₹46.50 Lakh Onwards",
-    description:
-      "Deep Emerald offers elegant living in a G+7 storey building with rooftop amenities. Located in Chakradhar Nagar with everything within walking distance.",
-    location: "for sale in Nalasopara West, Maharashtra",
-    type: "sale",
-
-    projectHighlights: [
-      "G+7 Floor Building",
-      "RERA Registered",
-      "Rooftop Amenities",
-      "Elegant Entrance Lobby",
-      "Luggage Elevators",
-    ],
-
-    apartmentSizes: [
-      { type: "1 BHK", area: "416 sq.ft. Carpet – ₹46.50 Lakh++" },
-      { type: "2 BHK", area: "636 sq.ft. Carpet – ₹77 Lakh++" },
-    ],
-
-    amenities: [
-      { icon: "Waves", text: "Kids Play Area" },
-      { icon: "Run", text: "Jogging Track" },
-      { icon: "Dumbbell", text: "Open Gym" },
-      { icon: "Utensils", text: "Modular Kitchen" },
-      { icon: "Car", text: "Open Parking" },
-      { icon: "Cctv", text: "CCTV Surveillance" },
-      { icon: "Palmtree", text: "Pergola Seating" },
-      { icon: "Home", text: "POP False Ceiling" },
-      { icon: "Flower2", text: "Flower Plantation" },
-      { icon: "Sprout", text: "Yoga Zone" },
-      { icon: "User", text: "Senior Citizen's Corner" },
-      { icon: "ArrowUp", text: "Luggage Elevators" },
-    ],
-
-    interiorFeatures: [
-      {
-        feature: "Kitchen",
-        description: "Modular kitchen provided",
-      },
-      {
-        feature: "Ceiling",
-        description: "POP false ceiling",
-      },
-    ],
-
-    exteriorFeatures: [
-      {
-        feature: "Lobby",
-        description: "Elegant entrance lobby",
-      },
-      {
-        feature: "Rooftop",
-        description: "Dedicated rooftop amenity zone",
-      },
-    ],
-
-    neighborhoodDetails: [
-      {
-        label: "Convenience:",
-        text: "Everything within walking distance.",
-      },
-    ],
-
-    locationHighlights: [
-      { amenity: "Nalasopara Station", distance: "5 mins" },
-      { amenity: "Hospital", distance: "2 mins" },
-      { amenity: "School & College", distance: "2 mins" },
-      { amenity: "Temple", distance: "2 mins" },
-    ],
-
-    images: [
-      {
-        id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
-        alt: "Deep Emerald"
-      }
-    ],
-
-    additionalInfo: [
-      { label: "RERA Registered:", text: "Yes" },
-      { label: "Tower Height:", text: "G + 7 Floors" },
-      { label: "Builder Website:", text: "www.deephomes.co.in" },
-    ],
-  }
-  ,
-  //---------------------------------------------------------------------------------//
-  {
-    id: "aadiraj-signature-nalasopara",
-    image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
-    title: "Aadiraj Signature",
-    address: "Close to Nalasopara Railway Station, Palghar, Maharashtra",
-    bhk: "2, 3, 5 BHK & Penthouses",
-    builder: "Aadiraj Industries",
-    sqft: "592 – 963+ Sq. Ft. Carpet Area",
-    price: "₹65 Lakh Onwards",
-    description:
-      "A majestic G+22 storey tower by Aadiraj Industries offering a life of luxury and elegance. Spacious Vastu-compliant homes with podium-level amenities.",
-    location: "for sale in Nalasopara, Maharashtra",
-    type: "sale",
-
-    projectHighlights: [
-      "Majestic G+22 Storey Tower",
-      "Vastu-Compliant Spacious Residences",
-      "All Master Bedrooms",
-      "Spacious Balconies with Views",
-      "Podium-Level Amenities",
-      "Jodi Flats & Penthouses Available",
-    ],
-
-    apartmentSizes: [
-      { type: "2 BHK", area: "592 sq.ft. – ₹65 Lakh++" },
-      { type: "3 BHK", area: "963 sq.ft. – ₹1.5 Cr++" },
-      { type: "Jodi/Penthouse", area: "Available" },
-    ],
-
-    amenities: [
-      { icon: "Leaf", text: "Multipurpose & Party Lawn" },
-      { icon: "Waves", text: "Children's Play Area" },
-      { icon: "Gamepad2", text: "Indoor Games" },
-      { icon: "Run", text: "Jogging Track" },
-      { icon: "Home", text: "Community Hall" },
-      { icon: "User", text: "Senior Citizens' Sit-Out" },
-      { icon: "Building2", text: "Podium-Level Amenities" },
-    ],
-
-    interiorFeatures: [
-      {
-        feature: "Bedrooms",
-        description: "All master bedrooms for added luxury",
-      },
-      {
-        feature: "Balconies",
-        description: "Spacious balconies to soak in the view",
-      },
-      {
-        feature: "Vastu",
-        description: "Vastu-compliant flats",
-      },
-    ],
-
-    exteriorFeatures: [
-      {
-        feature: "Tower Design",
-        description: "Majestic G+22 storey tower",
-      },
-      {
-        feature: "Land",
-        description: "Spacious 1 Acre land parcel",
-      },
-    ],
-
-    neighborhoodDetails: [
-      {
-        label: "Connectivity:",
-        text: "Seamless connected to Sopara Road & Station.",
-      },
-      {
-        label: "Convenience:",
-        text: "Banks, schools, malls & hospitals nearby.",
-      },
-    ],
-
-    locationHighlights: [
-      { amenity: "Nalasopara Railway Station", distance: "Close by" },
-      { amenity: "Sopara Road", distance: "Seamless Access" },
-    ],
-
-    images: [
-      {
-        id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
-        alt: "Aadiraj Signature"
-      }
-    ],
-
-    additionalInfo: [
-      { label: "Configuration:", text: "2 BHK, 3 BHK, 5 BHK, Penthouses" },
-      { label: "Tower Height:", text: "G + 22 Storey" },
-      { label: "Land Parcel:", text: "1 Acre" },
-      { label: "Developer:", text: "Aadiraj Industries" },
-    ],
-  }
-  ,
-  //---------------------------------------------------------------------------------//
-  {
     id: "prarthana-nalasopara",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/85cyzvLR/Chat-GPT-Image-Feb-1-2026-05-55-45-PM.png",
     title: "Prarthana",
     address: "Virar–Nallasopara Link Road, Palghar, Maharashtra",
     bhk: "1 & 2 BHK",
@@ -1890,7 +1534,7 @@ const properties = [
   {
     id: "umrale-varsha-nalasopara",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/zX70KppK/Chat-GPT-Image-Feb-1-2026-06-00-10-PM.png",
     title: "Umrale Varsha",
     address: "Prime Location, Nalasopara, Maharashtra",
     bhk: "1 & 2 BHK",
@@ -1967,77 +1611,9 @@ const properties = [
   ,
   //---------------------------------------------------------------------------------//
   {
-    id: "rent-back-scheme-virar-nalasopara-2",
-    image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
-    title: "Exclusive Rent-Back Tower 2",
-    address: "Virar–Nalasopara Belt, Palghar, Maharashtra",
-    bhk: "1 & 2 BHK",
-    builder: "Rental Investment",
-    sqft: "Modern Layouts",
-    price: "On Request",
-    description:
-      "Experience Elevated Living with our Exclusive Rent-Back Scheme. A 23-storey modern tower in a well-established Hindu society offering unmatched value.",
-    location: "for sale in Virar–Nalasopara, Maharashtra",
-    type: "sale",
-
-    projectHighlights: [
-      "Rent-Back Scheme: Earn Rent Until Possession",
-      "No EMI Till Fit-Out",
-      "10/90 Subvention Plan",
-      "23-Storey Modern Residential Tower",
-      "Located in Established Hindu Society",
-    ],
-
-    investmentBenefits: [
-      {
-        title: "Rent-Back Scheme",
-        description: "Your home pays you rent until possession.",
-      },
-      {
-        title: "No EMI Till Fit-Out",
-        description: "Financial ease during construction.",
-      },
-    ],
-
-    amenities: [
-      { icon: "Sprout", text: "Rooftop Yoga Deck" },
-      { icon: "Run", text: "Jogging Track" },
-      { icon: "Sun", text: "Open-Air Lounge" },
-      { icon: "Building2", text: "Rooftop Amenities" },
-    ],
-
-    neighborhoodDetails: [
-      {
-        label: "Location:",
-        text: "Growing Virar–Nalasopara belt.",
-      },
-      {
-        label: "Community:",
-        text: "Peaceful neighborhood in established society.",
-      },
-    ],
-
-    images: [
-      {
-        id: 1,
-        url: "https://i.postimg.cc/wv4RkQW3/image.png",
-        alt: "Rent-Back Tower"
-      },
-    ],
-
-    additionalInfo: [
-      { label: "Scheme:", text: "Rent-Back Scheme" },
-      { label: "Payment Plan:", text: "10/90 Subvention" },
-      { label: "Tower Height:", text: "23 Storeys" },
-    ],
-  }
-  ,
-  //---------------------------------------------------------------------------------//
-  {
     id: "golden-paradise-nalasopara",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/Kz42hRzC/Chat-GPT-Image-Feb-1-2026-06-06-17-PM.png",
     title: "Golden Paradise",
     address: "Off Nallasopara Station, Palghar, Maharashtra",
     bhk: "1 & 2 BHK",
@@ -2091,7 +1667,7 @@ const properties = [
   {
     id: "saptashrungi-heights-nalasopara",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/zv54XvXm/Chat-GPT-Image-Feb-1-2026-06-11-31-PM.png",
     title: "Saptashrungi Heights",
     address: "Prime Location, Nalasopara, Maharashtra",
     bhk: "1 & 2 BHK",
@@ -2165,7 +1741,7 @@ const properties = [
   {
     id: "romal-kirti-nalasopara",
     image:
-      "https://i.postimg.cc/wv4RkQW3/image.png",
+      "https://i.postimg.cc/m2KNQqCb/Chat-GPT-Image-Feb-1-2026-06-14-44-PM.png",
     title: "Romal Kirti",
     address: "Close to Station, Nalasopara, Maharashtra",
     bhk: "Spacious Flats",

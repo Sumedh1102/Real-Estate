@@ -9,7 +9,6 @@ function PropertyCard({
   builder,
   sqft,
   price,
-  description,
   location,
   type,
 }) {
@@ -20,7 +19,7 @@ function PropertyCard({
         <div className="relative aspect-[4/3] overflow-hidden rounded-xl h-[420px] w-full">
           <img
             src={image || "/placeholder.svg"}
-            alt={description}
+            alt="Property Image"
             className="w-full h-full object-cover"
           />
           {/* Badge */}
@@ -36,25 +35,19 @@ function PropertyCard({
 
         {/* Info Section */}
         <div className="pt-4 pb-2">
-          {/* Address */}
+          {/* Builder */}
           <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-wide text-[#1a1a1a] font-medium mb-1">
-            <MapPin className="w-3.5 h-3.5" />
-            <span>{address}</span>
+            <Building2 className="w-3.5 h-3.5" />
+            <span>{builder}</span>
           </div>
 
           {/* Details and Price Row */}
           <div className="flex items-center justify-between">
             {/* Property Details */}
-            <div className="flex items-center gap-3 text-[14px] text-[#1a1a1a]">
+            <div className="flex items-center gap-7 text-[14px] text-[#1a1a1a]">
               <div className="flex items-center gap-1">
                 <BedDouble className="w-3.5 h-3.5" />
                 <span>{bhk}</span>
-                <span className="w-1 h-1 rounded-full bg-[#1a1a1a] ml-1" />
-              </div>
-              <div className="flex items-center gap-1">
-                <Building2 className="w-3.5 h-3.5" />
-                <span>{builder}</span>
-                <span className="w-1 h-1 rounded-full bg-[#1a1a1a] ml-1" />
               </div>
               <div className="flex items-center gap-1">
                 <Square className="w-3.5 h-3.5" />
@@ -66,11 +59,11 @@ function PropertyCard({
             <div className="text-base font-semibold text-[#1a1a1a]">{price}</div>
           </div>
 
-          {/* Description */}
+          {/* Address */}
           <div className="border mt-2 border-black/10"></div>
-          <div className="mt-3 text-sm text-[#555] leading-snug">
-            <p>{description}</p>
-            <p>{location}</p>
+          <div className="mt-3 text-sm text-[#555] leading-snug flex items-start gap-1.5">
+            <MapPin className="w-4 h-4 mt-0.5" />
+            <p>{address}</p>
           </div>
         </div>
       </Link>
