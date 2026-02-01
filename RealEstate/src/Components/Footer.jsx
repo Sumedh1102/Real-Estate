@@ -45,7 +45,7 @@ export default function Footer() {
         {/* Giant Brand Typography */}
         <div className="relative mb-16 sm:mb-24 md:mb-32">
           <div className="flex flex-col items-center">
-            <h2 className="block mt-20 text-[#F6F2E8] font-medium tracking-tighter leading-none m-0 p-0 text-center lg:text-left lg:-translate-x-20 text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[200px] xl:text-[150px]">
+            <h2 className="block mt-24 text-[#F6F2E8] font-medium tracking-tighter leading-none m-0 p-0 text-center lg:text-left lg:-translate-x-20 text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[200px] xl:text-[150px]">
               BestDealProperty
             </h2>
 
@@ -63,38 +63,6 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Newsletter */}
-        <div className="max-w-xl mx-auto mb-20">
-          <div className="flex items-left justify-left gap-2 mb-4">
-            <span className="w-2 h-2 rounded-[2px] translate-y-1 bg-[#D4A574]" />
-            <p className="text-xs font-medium tracking-widest text-[#D4A574]">GET FRESH UPDATES</p>
-          </div>
-
-          <div
-            className={`flex flex-col sm:flex-row items-stretch sm:items-center bg-[#F6F2E8] rounded-xl overflow-hidden transition-all duration-300 ${
-              isFocused ? "ring-2 ring-[#D4A574] ring-offset-2 ring-offset-black" : ""
-            }`}
-          >
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              onFocus={() => setIsFocused(true)}
-              onBlur={() => setIsFocused(false)}
-              onKeyDown={handleKeyDown}
-              placeholder="example@gmail.com"
-              className="flex-1 px-4 sm:px-6 py-4 bg-transparent text-black placeholder-gray-500 outline-none text-[15px]"
-            />
-            <button
-              onClick={handleSubscribe}
-              className="flex items-center justify-center gap-2 px-6 sm:px-8 py-3 bg-black text-white font-medium text-sm tracking-wide transition-all duration-300 hover:bg-[#1A1A1A] hover:scale-[1.02] active:scale-95 rounded-xl m-1"
-            >
-              SUBSCRIBE
-              <ChevronRight className="w-4 h-4" />
-            </button>
           </div>
         </div>
 
