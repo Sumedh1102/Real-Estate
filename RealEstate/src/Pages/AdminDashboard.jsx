@@ -17,6 +17,7 @@ const AdminDashboard = () => {
     description: '',
     image: '', // Main image
     type: 'sale',
+    city: 'Nalasopara', // Default or empty
     location: '',
     amenities: [],
     interiorFeatures: [],
@@ -151,6 +152,15 @@ const AdminDashboard = () => {
               <select name="type" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm p-2 border" value={formData.type} onChange={handleChange} >
                 <option value="sale">Sale</option>
                 <option value="rent">Rent</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">City</label>
+              <select name="city" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm p-2 border" value={formData.city} onChange={handleChange} >
+                <option value="">Select City</option>
+                <option value="Nalasopara">Nalasopara</option>
+                <option value="Vasai">Vasai</option>
+                <option value="Virar">Virar</option>
               </select>
             </div>
           </div>

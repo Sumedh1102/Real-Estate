@@ -9,7 +9,7 @@ export default function RealEstateSidekick() {
       ]
     },
     {
-      title: "Local real estate experts in Palghar",
+      title: "Local real estate experts in Nalasopara",
       items: [
         "Deep knowledge of Nalasopara East & nearby areas",
         "Guidance on connectivity, schools, and amenities",

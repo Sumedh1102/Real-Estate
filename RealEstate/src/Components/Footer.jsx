@@ -16,12 +16,8 @@ const XIcon = () => (
 )
 
 const SOCIAL_LINKS = [
-  { icon: Linkedin, label: "LinkedIn" },
-  { icon: Facebook, label: "Facebook" },
-  { icon: TikTokIcon, label: "TikTok" },
-  { icon: Instagram, label: "Instagram" },
-  { icon: Youtube, label: "YouTube" },
-  { icon: XIcon, label: "X (Twitter)" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/share/1AqsmincvC/" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/teambestdealproperty/" },
 ]
 
 /* ---------------------- Component ---------------------- */
@@ -45,16 +41,18 @@ export default function Footer() {
         {/* Giant Brand Typography */}
         <div className="relative mb-16 sm:mb-24 md:mb-32">
           <div className="flex flex-col items-center">
-            <h2 className="block mt-24 text-[#F6F2E8] font-medium tracking-tighter leading-none m-0 p-0 text-center lg:text-left lg:-translate-x-20 text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[200px] xl:text-[150px]">
+            <h2 className="block my-10 text-[#F6F2E8] font-medium tracking-tighter leading-none m-0 p-0 text-center lg:text-left lg:-translate-x-20 text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[200px] xl:text-[150px]">
               BestDealProperty
             </h2>
 
-            <div className="w-full flex justify-center lg:justify-end lg:max-w-[900px] lg:translate-x-60 mt-8 lg:-mt-48 xl:-mt-36">
+            <div className="w-full flex justify-center lg:justify-end lg:max-w-[900px] lg:translate-x-48 mt-10 lg:-mt-48 xl:-mt-36">
               <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-2 gap-3 sm:gap-4">
-                {SOCIAL_LINKS.map(({ icon: Icon, label }) => (
+                {SOCIAL_LINKS.map(({ icon: Icon, label, href }) => (
                   <a
                     key={label}
-                    href="#"
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={label}
                     className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-[#1A1A1A] rounded-lg transition-all duration-300 hover:bg-[#2A2A2A] hover:scale-110 active:scale-95"
                   >

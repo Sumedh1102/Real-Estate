@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import PropertyCard from "../Components/PropertyCard";
 import { useProperties } from "../Context/PropertyContext";
 
 const AllProperties = () => {
     const { properties } = useProperties();
+    const [selectedCity, setSelectedCity] = useState("All");
+
+    const cities = ["All", "Virar", "Vasai", "Nalasopara"];
+
+    const filteredProperties = properties.filter(property =>
+        selectedCity === "All" ? true : property.city === selectedCity
+    );
 
     return (
         <main className="min-h-screen pt-20"> {/* Added padding top for navbar */}
@@ -21,21 +28,47 @@ const AllProperties = () => {
                                 </span>
                             </div>
 
-                            {/* Heading */}
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight lg:translate-x-40">
-                                Explore Our Complete Collection
-                                <br />
-                                Find Your Perfect Home
-                            </h2>
+                            {/* Heading & Filters */}
+                            <div className="flex flex-col gap-6 lg:translate-x-40">
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-medium text-[#1a1a1a] leading-tight tracking-tight">
+                                    Explore Our Complete Collection
+                                    <br />
+                                    Find Your Perfect Home
+                                </h2>
+
+                                {/* Filter Tabs */}
+                                <div className="flex flex-wrap gap-3">
+                                    {cities.map((city) => (
+                                        <button
+                                            key={city}
+                                            onClick={() => setSelectedCity(city)}
+                                            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${selectedCity === city
+                                                ? "bg-[#1a1a1a] text-white border-[#1a1a1a]"
+                                                : "bg-transparent text-[#1a1a1a] border-[#1a1a1a]/30 hover:border-[#1a1a1a]"
+                                                }`}
+                                        >
+                                            {city}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     {/* Property Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-                        {properties.map((property, index) => (
-                            <PropertyCard key={index} {...property} />
-                        ))}
-                    </div>
+                    {filteredProperties.length > 0 ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                            {filteredProperties.map((property, index) => (
+                                <PropertyCard key={index} {...property} />
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="w-full py-20 text-center">
+                            <h3 className="text-xl text-[#1a1a1a]/60">
+                                No properties found in {selectedCity} yet.
+                            </h3>
+                        </div>
+                    )}
                 </div>
             </section>
         </main>

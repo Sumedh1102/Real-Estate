@@ -13,6 +13,7 @@ const properties = [
     description:
       "Nalasopara’s tallest iconic 23-storey tower offering premium residences with the biggest carpet areas and modern lifestyle amenities.",
     location: "for sale in Nalasopara West, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -165,6 +166,7 @@ const properties = [
     description:
       "MK PROUD by MK Group is the tallest upcoming landmark in Nalasopara West, offering modern luxury residences with podium and rooftop amenities.",
     location: "for sale in Nalasopara West, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -329,6 +331,7 @@ const properties = [
     description:
       "Dhananjay Residency is a high-rise residential project near Nalasopara West station offering spacious 1, 2 & 3 BHK homes with modern amenities and excellent connectivity.",
     location: "for sale in Nalasopara West, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -468,6 +471,7 @@ const properties = [
     description:
       "Elite Tower is a premium G+23 storey luxurious residential project offering modern living with 19+ lifestyle amenities at Virar–Nalasopara Link Road.",
     location: "for sale in Virar–Nalasopara Link Road, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -618,6 +622,7 @@ const properties = [
     description:
       "AV Aashirwad is a pre-launch residential project offering spacious 1 & 2 BHK apartments with premium rooftop amenities and excellent connectivity in Nalasopara West.",
     location: "for sale in Nalasopara West, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -754,6 +759,7 @@ const properties = [
     description:
       "A landmark G+28 luxury residential project by Comfort Group offering premium 1, 2 & 3 BHK homes with world-class amenities and excellent connectivity in Nalasopara West.",
     location: "for sale in Nalasopara West, Palghar",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -902,6 +908,7 @@ const properties = [
     description:
       "Own not just a home, but a lifestyle filled with unmatched luxury! A premium G + 23 story tower with 19+ premium amenities located at Virar-Nallasopara Link Road.",
     location: "for sale in Virar-Nallasopara Link Road, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -1041,6 +1048,7 @@ const properties = [
     description:
       "Experience a world of luxury at Comfort Empire, offering thoughtfully designed homes with 30+ premium amenities on the Nalasopara-Virar Link Road.",
     location: "for sale in Nalasopara-Virar Link Road, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -1149,6 +1157,7 @@ const properties = [
     description:
       "Amit Palace is your address of pride. A G+7 storey tower with commercial shops and residential jodi flats, offering modern amenities near the station.",
     location: "for sale in Nallasopara West, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -1247,6 +1256,7 @@ const properties = [
     description:
       "Step into luxury at Mukundan Astria. 1, 2 & 3 BHK residences nearing possession with grand amenities and valet parking, just 5 mins from the station.",
     location: "for sale in Nalasopara West, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -1320,6 +1330,7 @@ const properties = [
     description:
       "Live Peacefuly, Live Grandly. Prarthana offers a grand lifestyle with 24x7 surveillance, power backup, and excellent connectivity to schools and hospitals.",
     location: "for sale in Virar–Nallasopara Link Road, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -1399,6 +1410,7 @@ const properties = [
     description:
       "Where Your Dream Home Comes to Life. Umrale Varsha offers stylish 1 & 2 BHK homes with affordable luxury and seamless connectivity.",
     location: "for sale in Nalasopara, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -1478,6 +1490,7 @@ const properties = [
     description:
       "Golden Paradise – Your Dream Home Awaits! Just 10 mins from Nallasopara Station, offering modern amenities including rooftop kids play area.",
     location: "for sale in Nallasopara, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -1532,6 +1545,7 @@ const properties = [
     description:
       "Welcome to Saptashrungi Heights, a G+7 premium luxurious project with 50+ personalized amenities, grand clubhouse, and EV charging station.",
     location: "for sale in Nalasopara, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
@@ -1606,6 +1620,7 @@ const properties = [
     description:
       "Romal Kirti offers 12-storey luxury living close to the station with spacious flats, podium garden, and attractive payment plans.",
     location: "for sale in Nalasopara, Maharashtra",
+    city: "Nalasopara",
     type: "sale",
 
     projectHighlights: [
