@@ -2,14 +2,8 @@ import { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 
 const FAQSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: ''
-  });
-
   const [result, setResult] = useState('');
+  const [loading, setLoading] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
 
   const faqs = [
@@ -60,46 +54,34 @@ const FAQSection = () => {
     }
   ];
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+    setResult("Sending...");
 
-  const handleSubmit = async () => {
-    if (!formData.name || !formData.phone || !formData.email || !formData.message) {
-      alert('Please fill in all fields');
-      return;
-    }
-
-    setResult('Sending...');
-
-    const data = new FormData();
-    data.append('access_key', 'ece892b2-6349-43b0-9a7d-ebba06392780');
-
-    Object.entries(formData).forEach(([key, value]) =>
-      data.append(key, value)
-    );
+    const formData = new FormData(event.target);
+    formData.append("access_key", "cf54f8c0-8e46-4325-882e-26a3e7b272da");
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: data
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
       });
 
-      const resData = await response.json();
+      const data = await response.json();
 
-      if (resData.success) {
-        setResult('Message sent successfully!');
-        setFormData({ name: '', phone: '', email: '', message: '' });
+      if (data.success) {
+        setResult("✅ Message sent successfully!");
+        event.target.reset();
       } else {
-        setResult('Something went wrong. Please try again.');
+        setResult("❌ Something went wrong. Please try again.");
       }
     } catch (error) {
       console.error(error);
-      setResult('Error submitting form. Please try again.');
+      setResult("⚠️ Network error. Please try again.");
     }
+
+    setLoading(false);
   };
 
   const toggleFaq = (index) => {
@@ -107,7 +89,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="min-h-screen pb-10 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F5F1E9' }}>
+    <div className="min-h-screen pb-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F5F1E9' }}>
       <div className="max-w-[1400px] mx-auto">
 
         {/* Header */}
@@ -115,37 +97,36 @@ const FAQSection = () => {
 
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-medium text-[#1a1a1a]">
-            Answers to common property questions — clear, honest, and helpful
+            Answers to common property questions clear, honest, and helpful
           </h2>
         </div>
 
-        {/* Two Column Layout */}
+        {/* Layout */}
         <div className="grid gap-12 lg:grid-cols-[40%_58%]">
 
-          {/* Left: Contact Form */}
+          {/* Contact Form */}
           <div className="lg:sticky lg:top-24">
             <div className="rounded-xl p-8 shadow-sm" style={{ backgroundColor: '#FAF8F0' }}>
               <p className="text-lg mb-6">
                 Have a property-related question? Our experts are just a message away.
               </p>
 
-              <div className="space-y-5">
+              <form onSubmit={onSubmit} className="space-y-5">
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <input
                     type="text"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     placeholder="Your Name"
+                    required
                     className="px-4 py-3 rounded-xl focus:ring-2 focus:ring-black outline-none"
                     style={{ backgroundColor: '#F0EDE5' }}
                   />
                   <input
                     type="tel"
                     name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
                     placeholder="Your Phone Number"
+                    required
                     className="px-4 py-3 rounded-xl focus:ring-2 focus:ring-black outline-none"
                     style={{ backgroundColor: '#F0EDE5' }}
                   />
@@ -154,29 +135,29 @@ const FAQSection = () => {
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   placeholder="Your Email Address"
+                  required
                   className="w-full px-4 py-3 rounded-xl focus:ring-2 focus:ring-black outline-none"
                   style={{ backgroundColor: '#F0EDE5' }}
                 />
 
                 <textarea
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   placeholder="Tell us what you're looking for..."
                   rows="4"
-                  className="w-full px-4 py-3 rounded-xl focus:ring-2 focus:ring-black outline-none resize-none"
+                  required
+                  className="w-full px-4 py-3 rounded-xl resize-none focus:ring-2 focus:ring-black outline-none"
                   style={{ backgroundColor: '#F0EDE5' }}
                 />
 
                 <button
-                  onClick={handleSubmit}
-                  className="w-full bg-black text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:scale-[1.02] transition"
+                  type="submit"
+                  disabled={loading}
+                  className={`w-full py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition
+                  ${loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-black text-white hover:scale-[1.02]'}`}
                 >
-                  SEND MESSAGE
-                  <ChevronRight size={18} />
+                  {loading ? "Sending..." : "SEND MESSAGE"}
+                  {!loading && <ChevronRight size={18} />}
                 </button>
 
                 {result && (
@@ -184,11 +165,12 @@ const FAQSection = () => {
                     {result}
                   </p>
                 )}
-              </div>
+
+              </form>
             </div>
           </div>
 
-          {/* Right: FAQ Accordion */}
+          {/* FAQ */}
           <div>
             {faqs.map((faq, index) => (
               <div key={index} className="border-b border-gray-300">
