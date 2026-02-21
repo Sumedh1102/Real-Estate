@@ -325,7 +325,7 @@ const properties = [
     title: "Dhananjay Residency",
     address: "Near Nalasopara West Railway Station, Palghar, Maharashtra",
     bhk: "1, 2 & 3 BHK",
-    builder: "Pooja Pal",
+    builder: "Dhananjay Residency",
     sqft: "400 – 750+ Sq. Ft. Usable Carpet Area",
     price: "₹36.99 Lakh Onwards",
     description:
@@ -465,7 +465,7 @@ const properties = [
     title: "Elite Tower",
     address: "Virar–Nalasopara Link Road, Palghar, Maharashtra",
     bhk: "1 BHK & 2 BHK",
-    builder: "Sunrise Developers",
+    builder: "Elite Tower",
     sqft: "Smartly Planned Carpet Areas",
     price: "₹30.99 Lakh Onwards",
     description:
@@ -1151,7 +1151,7 @@ const properties = [
     title: "Amit Palace",
     address: "Next to Rahul International School, Patankar Road, Nallasopara (West)",
     bhk: "2 BHK & Jodi Options",
-    builder: "Sai Siddhi Builders & Developers",
+    builder: "Amit Palace",
     sqft: "433 – 547 Sq. Ft. Carpet Area",
     price: "₹41 Lakh Onwards",
     description:

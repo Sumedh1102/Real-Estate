@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
 
   // 🔹 WhatsApp configuration
-  const ownerWhatsAppNumber = "919769241944";
+  const ownerWhatsAppNumber = "917841851944";
   const whatsappMessage =
     "Hello, I’m interested in your property listings. Please share more details.";
 
