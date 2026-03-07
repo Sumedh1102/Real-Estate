@@ -7,9 +7,9 @@ const properties = [
     title: "Dhananjay Hill View",
     address: "Nalasopara (West), Palghar, Maharashtra",
     bhk: "1, 2 & 3 BHK",
-    builder: "Pooja Singh",
+    builder: "dhananjay hill view",
     sqft: "409 – 650+ Sq. Ft. Carpet Area",
-    price: "On Request",
+    price: "₹36 Lakh Onwards",
     description:
       "Nalasopara’s tallest iconic 23-storey tower offering premium residences with the biggest carpet areas and modern lifestyle amenities.",
     location: "for sale in Nalasopara West, Maharashtra",
@@ -147,7 +147,7 @@ const properties = [
       { label: "Possession:", text: "June 2026" },
       { label: "Property Type:", text: "Residential & Commercial Development" },
       { label: "Ownership:", text: "Freehold Property" },
-      { label: "Developer Contact:", text: "Pooja Singh – 9209581068" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
     ],
   }
   ,
@@ -313,7 +313,7 @@ const properties = [
       { label: "Tower Configuration:", text: "G + Podium + 25 Storey" },
       { label: "Developer:", text: "MK Group" },
       { label: "Site Location:", text: "Survey No. 187, Nalasopara West" },
-      { label: "Contact Person:", text: "Sumit Tiwari – 9284096760" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
     ],
   }
   ,
@@ -453,7 +453,7 @@ const properties = [
       { label: "Tower Type:", text: "High-Rise Building" },
       { label: "Ownership:", text: "Freehold Property" },
       { label: "Location Advantage:", text: "Walking distance from station" },
-      { label: "Contact Person:", text: "Pooja Pal – 9152524205" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
     ],
   }
   ,
@@ -604,7 +604,7 @@ const properties = [
       { label: "Developer:", text: "Sunrise Developers" },
       { label: "MAHARERA No.:", text: "P99000055061" },
       { label: "Property Type:", text: "Residential Apartments" },
-      { label: "Contact Person:", text: "Disha Chawda – 7410567657" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
     ],
   }
   ,
@@ -741,7 +741,7 @@ const properties = [
       { label: "Tower Height:", text: "14 Storeys" },
       { label: "Property Type:", text: "Residential Apartments" },
       { label: "Ownership:", text: "Freehold Property" },
-      { label: "Contact Number:", text: "7841851944" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
     ],
   },
 
@@ -889,7 +889,7 @@ const properties = [
       { label: "Structure:", text: "G+28 Storey Tower" },
       { label: "Ownership:", text: "Freehold Property" },
       { label: "Developer:", text: "Comfort Group" },
-      { label: "Sales Contact:", text: "Raj Tiwari – +91 89318 19137" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
     ],
   }
 
@@ -1137,7 +1137,7 @@ const properties = [
     ],
 
     additionalInfo: [
-      { label: "Contact:", text: "Maahi Gupta – 9580307685" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
       { label: "Tagline:", text: "Your dream home awaits." },
       { label: "Property Type:", text: "Residential Apartments" },
     ],
@@ -1470,7 +1470,7 @@ const properties = [
     ],
 
     additionalInfo: [
-      { label: "Contact:", text: "+91 7841851944" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
       { label: "Status:", text: "Limited Inventory" },
       { label: "Tagline:", text: "Your Address for a Better Tomorrow" },
     ],
@@ -1658,7 +1658,7 @@ const properties = [
     additionalInfo: [
       { label: "Offers:", text: "Stamp Duty/Reg/GST Free" },
       { label: "Payment Plan:", text: "No Pre-EMI Till Fit Outs" },
-      { label: "Contact:", text: "8767324977" },
+      { label: "Contact:", text: "Poonam Nirmal – 7841851944" },
     ],
   }
 ];

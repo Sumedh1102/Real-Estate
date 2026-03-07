@@ -6,22 +6,12 @@ const PropertyContext = createContext();
 export const useProperties = () => useContext(PropertyContext);
 
 export const PropertyProvider = ({ children }) => {
-    const [properties, setProperties] = useState(() => {
-        // 1. Try to get data from LocalStorage
-        const savedProperties = localStorage.getItem('siteProperties_v6');
-
-        if (savedProperties) {
-            return JSON.parse(savedProperties);
-        } else {
-            // 2. If no data, use the initial static data
-            return initialProperties;
-        }
-    });
+    const [properties, setProperties] = useState(initialProperties);
 
     // Sync with LocalStorage whenever properties change
-    useEffect(() => {
-        localStorage.setItem('siteProperties_v6', JSON.stringify(properties));
-    }, [properties]);
+    // useEffect(() => {
+    //     localStorage.setItem('siteProperties_v30', JSON.stringify(properties));
+    // }, [properties]);
 
     const addProperty = (newProperty) => {
         setProperties((prev) => [...prev, newProperty]);
