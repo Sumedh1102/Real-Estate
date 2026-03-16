@@ -21,9 +21,28 @@ const Info2 = ({ property }) => {
     const locationHighlights = property?.locationHighlights || [];
     const additionalInfo = property?.additionalInfo || [];
 
-    const mapSrc = property?.address
-        ? `https://www.google.com/maps?q=${encodeURIComponent(property.address)}&output=embed`
-        : "https://www.google.com/maps?q=Nalasopara+West,+Maharashtra&output=embed";
+    const getMapSrc = () => {
+        if (property?.mapLink && property.mapLink.trim() !== "") {
+            const link = property.mapLink.trim();
+            // If it's already an embed link
+            if (link.includes('pb=')) {
+                // If the user pasted the entire iframe tag, extract the src
+                if (link.startsWith('<iframe')) {
+                    const match = link.match(/src="([^"]+)"/);
+                    if (match && match[1]) return match[1];
+                }
+                return link;
+            }
+            // For standard maps.google.com links
+            return `https://www.google.com/maps?q=${encodeURIComponent(link)}&output=embed`;
+        }
+        
+        return property?.address
+            ? `https://www.google.com/maps?q=${encodeURIComponent(property.address)}&output=embed`
+            : "https://www.google.com/maps?q=Nalasopara+West,+Maharashtra&output=embed";
+    };
+
+    const mapSrc = getMapSrc();
 
     return (
         <div className="bg-[#F7F5EE]">

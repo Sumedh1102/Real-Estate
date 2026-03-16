@@ -1,32 +1,43 @@
 import React, { useState } from 'react';
 import { useProperties } from '../Context/PropertyContext';
 import { useNavigate } from 'react-router-dom';
-import { Plus, X } from 'lucide-react';
+import { Plus, X, Edit, Trash2 } from 'lucide-react';
+
+const ICON_OPTIONS = [
+  'Activity', 'BatteryCharging', 'BookOpen', 'Building2', 'Car', 'Cctv', 'Droplets', 
+  'Dumbbell', 'Footprints', 'Gamepad2', 'Home', 'Laptop', 'Leaf', 'Palmtree', 'Phone', 
+  'Run', 'Shield', 'Sparkles', 'Sprout', 'Star', 'Theater', 'TreePine', 'User', 'Utensils', 
+  'Waves', 'Zap'
+];
+
+const INITIAL_FORM_STATE = {
+  title: '',
+  price: '',
+  address: '',
+  bhk: '',
+  builder: '',
+  sqft: '',
+  description: '',
+  image: '', // Main image
+  mapLink: '', // Google Maps link
+  type: 'sale',
+  city: 'Nalasopara', // Default or empty
+  location: '',
+  amenities: [],
+  interiorFeatures: [],
+  exteriorFeatures: [],
+  neighborhoodDetails: [],
+  locationHighlights: [],
+  images: [],
+  additionalInfo: [],
+};
 
 const AdminDashboard = () => {
-  const { addProperty } = useProperties();
+  const { properties, addProperty, updateProperty, deleteProperty } = useProperties();
   const navigate = useNavigate();
 
-  const [formData, setFormData] = useState({
-    title: '',
-    price: '',
-    address: '',
-    bhk: '',
-    builder: '',
-    sqft: '',
-    description: '',
-    image: '', // Main image
-    type: 'sale',
-    city: 'Nalasopara', // Default or empty
-    location: '',
-    amenities: [],
-    interiorFeatures: [],
-    exteriorFeatures: [],
-    neighborhoodDetails: [],
-    locationHighlights: [],
-    images: [],
-    additionalInfo: [],
-  });
+  const [formData, setFormData] = useState(INITIAL_FORM_STATE);
+  const [editingId, setEditingId] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -50,8 +61,8 @@ const AdminDashboard = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Generate a simple ID based on title
-    const id = formData.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    // Generate a simple ID based on title if not editing
+    const id = editingId || formData.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 
     // Filter out empty entries from arrays (basic validation)
     const cleanArray = (arr, key) => arr.filter(item => item[key]?.trim());
@@ -68,9 +79,22 @@ const AdminDashboard = () => {
       additionalInfo: cleanArray(formData.additionalInfo, 'label'),
     };
 
-    addProperty(newProperty);
-    alert('Property Added Successfully!');
-    navigate('/');
+    if (editingId) {
+      updateProperty(editingId, newProperty);
+      alert('Property Updated Successfully!');
+      setEditingId(null);
+      setFormData(INITIAL_FORM_STATE);
+    } else {
+      addProperty(newProperty);
+      alert('Property Added Successfully!');
+      setFormData(INITIAL_FORM_STATE);
+    }
+  };
+
+  const handleEdit = (property) => {
+    setFormData(property);
+    setEditingId(property.id);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // Generic render helper for lists
@@ -94,13 +118,26 @@ const AdminDashboard = () => {
           <div key={index} className="flex gap-3 items-start bg-white p-3 rounded-md shadow-sm border border-gray-100">
             {fields.map((field) => (
               <div key={field.name} className="flex-1">
-                <input
-                  type="text"
-                  placeholder={field.placeholder}
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm p-2 border"
-                  value={item[field.name]}
-                  onChange={(e) => handleArrayChange(category, index, field.name, e.target.value)}
-                />
+                {field.type === 'select' ? (
+                  <select
+                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm p-2 border"
+                    value={item[field.name] || ''}
+                    onChange={(e) => handleArrayChange(category, index, field.name, e.target.value)}
+                  >
+                    <option value="">Select Icon...</option>
+                    {field.options.map((opt) => (
+                      <option key={opt} value={opt}>{opt}</option>
+                    ))}
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    placeholder={field.placeholder}
+                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm p-2 border"
+                    value={item[field.name] || ''}
+                    onChange={(e) => handleArrayChange(category, index, field.name, e.target.value)}
+                  />
+                )}
               </div>
             ))}
             <button
@@ -120,8 +157,22 @@ const AdminDashboard = () => {
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8 my-10">
       <div className="max-w-5xl mx-auto bg-white p-8">
-        <h1 className="text-3xl font-thin text-gray-900 mb-8 border-b pb-4">Add
-          <span className='text-blue-500 font-bold'> New </span> Property</h1>
+        <div className="flex justify-between items-center mb-8 border-b pb-4">
+          <h1 className="text-3xl font-thin text-gray-900">
+            {editingId ? 'Edit' : 'Add'} <span className="text-blue-500 font-bold">{editingId ? 'Property' : 'New Property'}</span>
+          </h1>
+          {editingId && (
+            <button
+              onClick={() => {
+                setEditingId(null);
+                setFormData(INITIAL_FORM_STATE);
+              }}
+              className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
+            >
+              Cancel Edit
+            </button>
+          )}
+        </div>
 
         <form onSubmit={handleSubmit} className="space-y-8">
 
@@ -177,6 +228,11 @@ const AdminDashboard = () => {
             <input type="url" name="image" placeholder="https://..." required className="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm p-2 border" value={formData.image} onChange={handleChange} />
           </div>
           <div>
+            <label className="block text-sm font-medium text-gray-700">Google Maps Link</label>
+            <input type="url" name="mapLink" placeholder="https://www.google.com/maps/embed?pb=..." className="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm p-2 border" value={formData.mapLink} onChange={handleChange} />
+            <p className="mt-1 text-xs text-gray-500">Provide the embed or standard Google Maps link (e.g., https://goo.gl/maps/... or https://maps.app.goo.gl/...)</p>
+          </div>
+          <div>
             <label className="block text-sm font-medium text-gray-700">Description</label>
             <textarea name="description" rows={4} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm p-2 border" value={formData.description} onChange={handleChange} />
           </div>
@@ -186,7 +242,7 @@ const AdminDashboard = () => {
 
             {/* Amenities */}
             {renderList('Amenities', 'amenities',
-              [{ name: 'icon', placeholder: 'Icon Name (e.g. Building2)' }, { name: 'text', placeholder: 'Amenity Name' }],
+              [{ name: 'icon', type: 'select', options: ICON_OPTIONS }, { name: 'text', placeholder: 'Amenity Name' }],
               { icon: 'Building2', text: '' }
             )}
 
@@ -233,10 +289,54 @@ const AdminDashboard = () => {
               type="submit"
               className="w-full md:w-auto flex justify-center py-3 px-8 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-colors"
             >
-              Add Property
+              {editingId ? 'Update Property' : 'Add Property'}
             </button>
           </div>
         </form>
+      </div>
+
+      <div className="max-w-5xl mx-auto mt-12 bg-white p-8 border-t">
+        <h2 className="text-2xl font-bold mb-6">Manage Properties</h2>
+        <div className="grid gap-6">
+          {properties.map((property) => (
+            <div
+              key={property.id}
+              className="flex items-center justify-between p-4 border rounded-lg hover:shadow-md transition-shadow bg-gray-50 bg-opacity-50"
+            >
+              <div className="flex items-center gap-4">
+                <img
+                  src={property.image}
+                  alt={property.title}
+                  className="w-20 h-20 object-cover rounded-md"
+                />
+                <div>
+                  <h3 className="font-semibold text-lg">{property.title}</h3>
+                  <p className="text-gray-600 text-sm">{property.address}</p>
+                  <p className="text-gray-800 font-medium mt-1">{property.price}</p>
+                </div>
+              </div>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => handleEdit(property)}
+                  className="p-2 text-blue-600 hover:bg-blue-50 rounded-full transition-colors"
+                  title="Edit Property"
+                >
+                  <Edit size={20} />
+                </button>
+                <button
+                  onClick={() => deleteProperty(property.id)}
+                  className="p-2 text-red-600 hover:bg-red-50 rounded-full transition-colors"
+                  title="Delete Property"
+                >
+                  <Trash2 size={20} />
+                </button>
+              </div>
+            </div>
+          ))}
+          {properties.length === 0 && (
+            <p className="text-gray-500 italic">No properties found.</p>
+          )}
+        </div>
       </div>
     </div>
   );
